@@ -1,0 +1,1110 @@
+[INFO ] 2024-01-06 12:47:20.019 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 12:47:20.028 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 12:47:27.980 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 12:47:27.980 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 12:47:27.983 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 12:47:27.985 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 12:47:28.004 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T12:47:28.0029404"}}
+[INFO ] 2024-01-06 12:47:28.369 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 12:47:28.384 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"timestamp":"2024-01-06T12:47:28.3766714"},"body":"hello"}
+[INFO ] 2024-01-06 12:47:28.384 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"timestamp":"2024-01-06T12:47:28.3766714"},"body":"hello"}
+[INFO ] 2024-01-06 12:47:28.384 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 12:47:28.895 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 12:47:28.896 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T12:47:28.8961144"}}
+[ERROR] 2024-01-06 12:47:28.896 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 12:47:29.122 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 12:47:51.633 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 12:47:51.633 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 12:47:51.633 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 12:47:51.633 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 12:47:51.634 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T12:47:51.6340267"}}
+[INFO ] 2024-01-06 12:47:51.990 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 12:47:52.003 [pool-1-thread-5] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"timestamp":"2024-01-06T12:47:51.996772"},"body":"hello"}
+[INFO ] 2024-01-06 12:47:52.003 [pool-1-thread-5] ConsoleRequestHandler - Handling request {"header":{"timestamp":"2024-01-06T12:47:51.996772"},"body":"hello"}
+[INFO ] 2024-01-06 12:47:52.003 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 12:47:52.513 [pool-1-thread-5] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 12:47:52.514 [pool-1-thread-5] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T12:47:52.5145242"}}
+[ERROR] 2024-01-06 12:47:52.514 [pool-1-thread-5] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 12:47:53.382 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 12:56:52.744 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 12:56:52.748 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 12:57:01.155 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 12:57:01.155 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 12:57:01.156 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 12:57:01.161 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 12:57:01.167 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T12:57:01.1652793"}}
+[INFO ] 2024-01-06 12:57:01.557 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 12:57:01.571 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"timestamp":"2024-01-06T12:57:01.5632768"},"body":"hello"}
+[INFO ] 2024-01-06 12:57:01.571 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"timestamp":"2024-01-06T12:57:01.5632768"},"body":"hello"}
+[INFO ] 2024-01-06 12:57:01.571 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 12:57:02.080 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 12:57:02.080 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T12:57:02.0801958"}}
+[ERROR] 2024-01-06 12:57:02.081 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 12:57:02.822 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 13:33:56.861 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 13:33:56.866 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 13:36:23.876 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 13:36:23.877 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 13:36:23.879 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 13:36:23.883 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 13:36:23.892 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T13:36:23.8900762"}}
+[INFO ] 2024-01-06 13:36:24.250 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 13:36:24.256 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"timestamp":"2024-01-06T13:36:23.8614163"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 13:36:24.257 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"timestamp":"2024-01-06T13:36:23.8614163"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 13:36:24.257 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 13:36:24.762 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 13:36:24.763 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T13:36:24.7633611"}}
+[ERROR] 2024-01-06 13:36:24.763 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 13:36:25.268 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 14:50:00.512 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 14:50:00.518 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 14:50:11.000 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 14:50:11.001 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 14:50:11.002 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 14:50:11.005 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 14:50:11.013 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T14:50:11.0118418"}}
+[ERROR] 2024-01-06 14:50:11.014 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 14:50:11.391 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:50:11.398 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:50:10.9889573"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:50:11.399 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:50:10.9889573"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[ERROR] 2024-01-06 14:50:11.399 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type sending-data
+[INFO ] 2024-01-06 14:50:11.399 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:50:11.906 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 14:50:11.907 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T14:50:11.9073891"}}
+[ERROR] 2024-01-06 14:50:11.907 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 14:50:11.907 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 14:50:12.648 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 14:50:50.869 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 14:50:50.869 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 14:50:50.870 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 14:50:50.870 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 14:50:50.871 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T14:50:50.8701602"}}
+[ERROR] 2024-01-06 14:50:50.871 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 14:50:51.239 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:50:51.245 [pool-1-thread-5] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:50:50.8591317"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:50:51.245 [pool-1-thread-5] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:50:50.8591317"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[ERROR] 2024-01-06 14:50:51.246 [pool-1-thread-5] ConsoleRequestHandler - Unknown request type sending-data
+[INFO ] 2024-01-06 14:50:51.246 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:50:51.747 [pool-1-thread-5] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 14:50:51.748 [pool-1-thread-5] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T14:50:51.7481625"}}
+[ERROR] 2024-01-06 14:50:51.748 [pool-1-thread-5] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 14:50:51.748 [pool-1-thread-5] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 14:50:52.040 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 14:51:58.678 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 14:51:58.683 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 14:52:00.952 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 14:52:00.953 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 14:52:00.954 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 14:52:00.956 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 14:52:00.964 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T14:52:00.9625144"}}
+[ERROR] 2024-01-06 14:52:00.965 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 14:52:01.428 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:52:01.432 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:52:00.9390017"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:52:01.433 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:52:00.9390017"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:52:01.433 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:52:01.942 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 14:52:01.943 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T14:52:01.9424988"}}
+[ERROR] 2024-01-06 14:52:01.943 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 14:52:01.943 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 14:52:02.720 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 14:54:47.696 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 14:54:47.700 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 14:54:56.456 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 14:54:56.457 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 14:54:56.459 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 14:54:56.464 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 14:54:56.478 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T14:54:56.4759133"}}
+[ERROR] 2024-01-06 14:54:56.478 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 14:54:56.894 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:54:56.900 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:54:56.4450769"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:54:56.900 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:54:56.4450769"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:54:56.901 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:54:57.402 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 14:54:57.403 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T14:54:57.4031252"}}
+[ERROR] 2024-01-06 14:54:57.403 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 14:54:57.403 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 14:54:57.772 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 14:55:56.177 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 14:55:56.181 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 14:55:57.572 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 14:55:57.573 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 14:55:57.574 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 14:55:57.577 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 14:55:57.584 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T14:55:57.5828119"}}
+[INFO ] 2024-01-06 14:55:57.584 [pool-1-thread-2] ConsoleRequestHandler - Request type local_connect
+[ERROR] 2024-01-06 14:55:57.585 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 14:55:57.943 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:55:57.952 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:55:57.5615685"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:55:57.953 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:55:57.5615685"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:55:57.954 [pool-1-thread-4] ConsoleRequestHandler - Request type sending-data
+[INFO ] 2024-01-06 14:55:57.954 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:55:58.458 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 14:55:58.459 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T14:55:58.4595595"}}
+[INFO ] 2024-01-06 14:55:58.459 [pool-1-thread-4] ConsoleRequestHandler - Request type local_disconnect
+[ERROR] 2024-01-06 14:55:58.460 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 14:55:58.460 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 14:55:59.201 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 14:56:38.768 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 14:56:38.772 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 14:56:42.311 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 14:56:42.312 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 14:56:42.314 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 14:56:42.316 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 14:56:42.324 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T14:56:42.3229036"}}
+[ERROR] 2024-01-06 14:56:42.325 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 14:56:42.794 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:56:42.799 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:56:42.3005088"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:56:42.800 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:56:42.3005088"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:56:42.800 [pool-1-thread-4] ConsoleRequestHandler - Request type sending-data
+[INFO ] 2024-01-06 14:56:42.801 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:56:43.297 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 14:56:43.298 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T14:56:43.2974309"}}
+[ERROR] 2024-01-06 14:56:43.298 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 14:56:43.298 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 14:56:43.822 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 14:58:09.803 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 14:58:09.808 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 14:58:15.630 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 14:58:15.631 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 14:58:15.633 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 14:58:15.635 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 14:58:15.642 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T14:58:15.6406492"}}
+[ERROR] 2024-01-06 14:58:15.642 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 14:58:16.076 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:58:16.082 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:58:15.6200618"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:58:16.082 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:58:15.6200618"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:58:16.083 [pool-1-thread-4] ConsoleRequestHandler - Request type sending-data
+[INFO ] 2024-01-06 14:58:16.083 [pool-1-thread-4] ConsoleRequestHandler - Received data ["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]
+[INFO ] 2024-01-06 14:58:16.083 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:58:16.582 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 14:58:16.583 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T14:58:16.583031"}}
+[ERROR] 2024-01-06 14:58:16.583 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 14:58:16.584 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 14:58:16.875 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 14:59:30.895 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 14:59:30.899 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 14:59:31.753 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 14:59:31.754 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 14:59:31.756 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 14:59:31.765 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 14:59:31.775 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T14:59:31.7749133"}}
+[ERROR] 2024-01-06 14:59:31.776 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 14:59:32.135 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:59:32.141 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:59:31.6369993"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:59:32.141 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T14:59:31.6369993"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 14:59:32.142 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 14:59:32.639 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 14:59:32.640 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T14:59:32.6393116"}}
+[ERROR] 2024-01-06 14:59:32.640 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 14:59:32.640 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 14:59:32.912 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 15:00:05.281 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 15:00:05.285 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 15:00:07.687 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:00:07.689 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:00:07.690 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:00:07.693 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:00:07.700 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:00:07.6995275"}}
+[ERROR] 2024-01-06 15:00:07.701 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:00:08.158 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:00:08.165 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:00:07.6771547"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:00:08.166 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:00:07.6771547"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:00:08.166 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:00:08.679 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:00:08.680 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:00:08.6801681"}}
+[ERROR] 2024-01-06 15:00:08.680 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:00:08.681 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:00:09.298 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 15:00:44.578 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 15:00:44.584 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 15:00:47.076 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:00:47.077 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:00:47.080 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:00:47.084 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:00:47.091 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:00:47.0901857"}}
+[ERROR] 2024-01-06 15:00:47.092 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:00:47.524 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:00:47.529 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:00:47.0629249"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:00:47.530 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:00:47.0629249"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:00:47.530 [pool-1-thread-4] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:00:47.531 [pool-1-thread-4] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:00:47.531 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:00:48.031 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:00:48.032 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:00:48.0320524"}}
+[ERROR] 2024-01-06 15:00:48.032 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:00:48.032 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:00:48.619 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 15:02:17.335 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 15:02:17.339 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 15:02:20.875 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:02:20.875 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:02:20.877 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:02:20.879 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:02:20.884 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:02:20.8836323"}}
+[ERROR] 2024-01-06 15:02:20.885 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:02:21.220 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:02:21.225 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:02:20.8643868"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:02:21.227 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:02:20.8643868"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:02:21.227 [pool-1-thread-4] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:02:21.228 [pool-1-thread-4] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:02:21.228 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:02:21.727 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:02:21.728 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:02:21.7284753"}}
+[ERROR] 2024-01-06 15:02:21.728 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:02:21.729 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:02:22.376 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 15:03:07.883 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 15:03:07.888 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 15:03:37.388 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:03:37.389 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:03:37.389 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:03:37.393 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:03:37.399 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:03:37.3983873"}}
+[ERROR] 2024-01-06 15:03:37.399 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:03:37.766 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:03:37.771 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:03:37.3783413"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:03:37.772 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:03:37.3783413"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:03:37.772 [pool-1-thread-4] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:03:37.772 [pool-1-thread-4] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:03:37.773 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:03:38.281 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:03:38.281 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:03:38.2815991"}}
+[ERROR] 2024-01-06 15:03:38.281 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:03:38.282 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:03:39.195 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 15:19:04.623 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 15:19:04.631 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 15:19:08.877 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:19:08.878 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:19:08.880 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:19:08.884 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:19:08.891 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:19:08.8902303"}}
+[ERROR] 2024-01-06 15:19:08.892 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:19:09.231 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:19:09.238 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:19:08.8621016"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:19:09.238 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:19:08.8621016"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:19:09.238 [pool-1-thread-4] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:19:09.239 [pool-1-thread-4] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:19:09.239 [pool-1-thread-4] ConsoleRequestHandler - Received 20 participants
+[INFO ] 2024-01-06 15:19:09.239 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:19:09.748 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:19:09.749 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:19:09.749576"}}
+[ERROR] 2024-01-06 15:19:09.749 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:19:09.750 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:19:10.670 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 15:19:57.753 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 15:19:57.757 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 15:20:02.894 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:20:02.895 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:20:02.896 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:20:02.899 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:20:02.906 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:20:02.9041008"}}
+[ERROR] 2024-01-06 15:20:02.906 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:20:03.261 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:20:03.265 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:20:02.8820319"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:20:03.266 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:20:02.8820319"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:20:03.267 [pool-1-thread-4] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:20:03.267 [pool-1-thread-4] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:20:03.267 [pool-1-thread-4] ConsoleRequestHandler - Received ["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"] participants
+[INFO ] 2024-01-06 15:20:03.267 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:20:03.772 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:20:03.773 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:20:03.7736074"}}
+[ERROR] 2024-01-06 15:20:03.773 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:20:03.773 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:20:03.813 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 15:21:11.531 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 15:21:11.537 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 15:21:11.864 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:21:11.865 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:21:11.866 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:21:11.869 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:21:11.877 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:21:11.8757432"}}
+[ERROR] 2024-01-06 15:21:11.877 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:21:12.259 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:21:12.263 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:21:11.8494515"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:21:12.265 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:21:11.8494515"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:21:12.265 [pool-1-thread-4] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:21:12.265 [pool-1-thread-4] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:21:12.266 [pool-1-thread-4] ConsoleRequestHandler - Received ["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"] participants
+[INFO ] 2024-01-06 15:21:12.266 [pool-1-thread-4] ConsoleRequestHandler - Participant 0 7
+[INFO ] 2024-01-06 15:21:12.266 [pool-1-thread-4] ConsoleRequestHandler - Participant 1 5
+[INFO ] 2024-01-06 15:21:12.267 [pool-1-thread-4] ConsoleRequestHandler - Participant 2 8
+[INFO ] 2024-01-06 15:21:12.267 [pool-1-thread-4] ConsoleRequestHandler - Participant 3 2
+[INFO ] 2024-01-06 15:21:12.267 [pool-1-thread-4] ConsoleRequestHandler - Participant 4 -1
+[INFO ] 2024-01-06 15:21:12.267 [pool-1-thread-4] ConsoleRequestHandler - Participant 5 1
+[INFO ] 2024-01-06 15:21:12.267 [pool-1-thread-4] ConsoleRequestHandler - Participant 6 6
+[INFO ] 2024-01-06 15:21:12.267 [pool-1-thread-4] ConsoleRequestHandler - Participant 7 8
+[INFO ] 2024-01-06 15:21:12.268 [pool-1-thread-4] ConsoleRequestHandler - Participant 8 1
+[INFO ] 2024-01-06 15:21:12.268 [pool-1-thread-4] ConsoleRequestHandler - Participant 9 1
+[INFO ] 2024-01-06 15:21:12.268 [pool-1-thread-4] ConsoleRequestHandler - Participant 10 1
+[INFO ] 2024-01-06 15:21:12.268 [pool-1-thread-4] ConsoleRequestHandler - Participant 11 0
+[INFO ] 2024-01-06 15:21:12.268 [pool-1-thread-4] ConsoleRequestHandler - Participant 12 0
+[INFO ] 2024-01-06 15:21:12.269 [pool-1-thread-4] ConsoleRequestHandler - Participant 13 4
+[INFO ] 2024-01-06 15:21:12.269 [pool-1-thread-4] ConsoleRequestHandler - Participant 14 -1
+[INFO ] 2024-01-06 15:21:12.270 [pool-1-thread-4] ConsoleRequestHandler - Participant 15 4
+[INFO ] 2024-01-06 15:21:12.270 [pool-1-thread-4] ConsoleRequestHandler - Participant 16 0
+[INFO ] 2024-01-06 15:21:12.270 [pool-1-thread-4] ConsoleRequestHandler - Participant 17 1
+[INFO ] 2024-01-06 15:21:12.270 [pool-1-thread-4] ConsoleRequestHandler - Participant 18 2
+[INFO ] 2024-01-06 15:21:12.270 [pool-1-thread-4] ConsoleRequestHandler - Participant 19 1
+[INFO ] 2024-01-06 15:21:12.271 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:21:12.764 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:21:12.764 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:21:12.7643391"}}
+[ERROR] 2024-01-06 15:21:12.765 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:21:12.765 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:21:13.548 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 15:22:02.116 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 15:22:02.120 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 15:22:05.733 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:22:05.733 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:22:05.735 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:22:05.738 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:22:05.746 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:22:05.7445512"}}
+[ERROR] 2024-01-06 15:22:05.746 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:22:06.117 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:22:06.122 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:22:05.7208659"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:22:06.122 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:22:05.7208659"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:22:06.122 [pool-1-thread-4] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:22:06.122 [pool-1-thread-4] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:22:06.123 [pool-1-thread-4] ConsoleRequestHandler - Received ["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"] participants
+[INFO ] 2024-01-06 15:22:06.124 [pool-1-thread-4] ConsoleRequestHandler - Added participant 0 7 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.124 [pool-1-thread-4] ConsoleRequestHandler - Added participant 1 5 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.124 [pool-1-thread-4] ConsoleRequestHandler - Added participant 2 8 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.125 [pool-1-thread-4] ConsoleRequestHandler - Added participant 3 2 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.125 [pool-1-thread-4] ConsoleRequestHandler - Added participant 4 -1 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.125 [pool-1-thread-4] ConsoleRequestHandler - Added participant 5 1 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.125 [pool-1-thread-4] ConsoleRequestHandler - Added participant 6 6 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.126 [pool-1-thread-4] ConsoleRequestHandler - Added participant 7 8 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.126 [pool-1-thread-4] ConsoleRequestHandler - Added participant 8 1 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.126 [pool-1-thread-4] ConsoleRequestHandler - Added participant 9 1 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.126 [pool-1-thread-4] ConsoleRequestHandler - Added participant 10 1 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.127 [pool-1-thread-4] ConsoleRequestHandler - Added participant 11 0 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.127 [pool-1-thread-4] ConsoleRequestHandler - Added participant 12 0 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.127 [pool-1-thread-4] ConsoleRequestHandler - Added participant 13 4 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.127 [pool-1-thread-4] ConsoleRequestHandler - Added participant 14 -1 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.128 [pool-1-thread-4] ConsoleRequestHandler - Added participant 15 4 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.128 [pool-1-thread-4] ConsoleRequestHandler - Added participant 16 0 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.129 [pool-1-thread-4] ConsoleRequestHandler - Added participant 17 1 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.129 [pool-1-thread-4] ConsoleRequestHandler - Added participant 18 2 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.129 [pool-1-thread-4] ConsoleRequestHandler - Added participant 19 1 C1 to the queue
+[INFO ] 2024-01-06 15:22:06.129 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:22:06.623 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:22:06.624 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:22:06.6246479"}}
+[ERROR] 2024-01-06 15:22:06.625 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:22:06.625 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:22:07.161 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 1 connections
+[INFO ] 2024-01-06 15:37:51.567 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 15:37:51.572 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 15:37:54.652 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:37:54.653 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:37:54.654 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:37:54.657 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:37:54.664 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:37:54.6626646"}}
+[ERROR] 2024-01-06 15:37:54.664 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:37:55.006 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:37:55.012 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:37:54.6371912"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:37:55.013 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:37:54.6371912"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:37:55.013 [pool-1-thread-4] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:37:55.013 [pool-1-thread-4] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:37:55.013 [pool-1-thread-4] ConsoleRequestHandler - Received ["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"] participants
+[INFO ] 2024-01-06 15:37:55.014 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:37:56.027 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:37:56.027 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:37:56.028 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:37:56.028 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:37:56.028 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:37:56.0283115"}}
+[ERROR] 2024-01-06 15:37:56.028 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:37:56.029 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:37:56.030 [pool-1-thread-5] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:37:56.0263068"},"body":["20 6","21 7","22 3","23 1","24 -1","25 6","26 7","27 6","28 0","29 5","30 -1","31 0","32 7","33 4","34 6","35 2","36 5","37 4","38 7","39 4"]}
+[INFO ] 2024-01-06 15:37:56.030 [pool-1-thread-5] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:37:56.0263068"},"body":["20 6","21 7","22 3","23 1","24 -1","25 6","26 7","27 6","28 0","29 5","30 -1","31 0","32 7","33 4","34 6","35 2","36 5","37 4","38 7","39 4"]}
+[INFO ] 2024-01-06 15:37:56.030 [pool-1-thread-5] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:37:56.030 [pool-1-thread-5] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:37:56.030 [pool-1-thread-5] ConsoleRequestHandler - Received ["20 6","21 7","22 3","23 1","24 -1","25 6","26 7","27 6","28 0","29 5","30 -1","31 0","32 7","33 4","34 6","35 2","36 5","37 4","38 7","39 4"] participants
+[INFO ] 2024-01-06 15:37:56.030 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:37:57.040 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:37:57.041 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:37:57.041 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:37:57.042 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:37:57.042 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:37:57.042922"}}
+[ERROR] 2024-01-06 15:37:57.042 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:37:57.043 [pool-1-thread-6] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:37:57.043 [pool-1-thread-6] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:37:57.0395433"},"body":["40 7","41 2","42 6","43 5","44 6","45 8","46 3","47 1","48 0","49 2","50 1","51 -1","52 1","53 4","54 0","55 3","56 5","57 7","58 7","59 0"]}
+[INFO ] 2024-01-06 15:37:57.043 [pool-1-thread-6] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:37:57.0395433"},"body":["40 7","41 2","42 6","43 5","44 6","45 8","46 3","47 1","48 0","49 2","50 1","51 -1","52 1","53 4","54 0","55 3","56 5","57 7","58 7","59 0"]}
+[INFO ] 2024-01-06 15:37:57.044 [pool-1-thread-6] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:37:57.044 [pool-1-thread-6] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:37:57.044 [pool-1-thread-6] ConsoleRequestHandler - Received ["40 7","41 2","42 6","43 5","44 6","45 8","46 3","47 1","48 0","49 2","50 1","51 -1","52 1","53 4","54 0","55 3","56 5","57 7","58 7","59 0"] participants
+[INFO ] 2024-01-06 15:37:57.044 [pool-1-thread-6] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:37:58.054 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:37:58.054 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:37:58.055 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:37:58.055 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:37:58.055 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:37:58.0558548"}}
+[ERROR] 2024-01-06 15:37:58.055 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:37:58.056 [pool-1-thread-7] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:37:58.057 [pool-1-thread-7] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:37:58.0539776"},"body":["60 2","61 2","62 5","63 2","64 4","65 0","66 4","67 3","68 7","69 1","70 0","71 -1","72 4","73 8","74 -1","75 2","76 3","77 -1","78 7","79 8"]}
+[INFO ] 2024-01-06 15:37:58.057 [pool-1-thread-7] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:37:58.0539776"},"body":["60 2","61 2","62 5","63 2","64 4","65 0","66 4","67 3","68 7","69 1","70 0","71 -1","72 4","73 8","74 -1","75 2","76 3","77 -1","78 7","79 8"]}
+[INFO ] 2024-01-06 15:37:58.057 [pool-1-thread-7] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:37:58.058 [pool-1-thread-7] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:37:58.058 [pool-1-thread-7] ConsoleRequestHandler - Received ["60 2","61 2","62 5","63 2","64 4","65 0","66 4","67 3","68 7","69 1","70 0","71 -1","72 4","73 8","74 -1","75 2","76 3","77 -1","78 7","79 8"] participants
+[INFO ] 2024-01-06 15:37:58.058 [pool-1-thread-7] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:37:59.057 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:37:59.058 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:37:59.058 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:37:59.058 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:37:59.059 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:37:59.0591704"}}
+[ERROR] 2024-01-06 15:37:59.059 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:37:59.060 [pool-1-thread-8] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:37:59.061 [pool-1-thread-8] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:37:59.0562923"},"body":["0 3","1 7","2 0","3 8","4 7","5 8","6 8","7 3","8 5","9 5","10 1","11 8","12 -1","13 1","14 1","15 3","16 -1","17 3","18 3","19 4"]}
+[INFO ] 2024-01-06 15:37:59.061 [pool-1-thread-8] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:37:59.0562923"},"body":["0 3","1 7","2 0","3 8","4 7","5 8","6 8","7 3","8 5","9 5","10 1","11 8","12 -1","13 1","14 1","15 3","16 -1","17 3","18 3","19 4"]}
+[INFO ] 2024-01-06 15:37:59.062 [pool-1-thread-8] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:37:59.062 [pool-1-thread-8] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:37:59.062 [pool-1-thread-8] ConsoleRequestHandler - Received ["0 3","1 7","2 0","3 8","4 7","5 8","6 8","7 3","8 5","9 5","10 1","11 8","12 -1","13 1","14 1","15 3","16 -1","17 3","18 3","19 4"] participants
+[INFO ] 2024-01-06 15:37:59.062 [pool-1-thread-8] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:38:00.061 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:00.061 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:00.062 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:00.063 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:38:00.063 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:38:00.0631012"}}
+[ERROR] 2024-01-06 15:38:00.064 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:38:00.065 [pool-1-thread-9] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:38:00.066 [pool-1-thread-9] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:38:00.0592322"},"body":["20 2","21 3","22 0","23 5","24 4","25 1","26 2","27 2","28 -1","29 0","30 4","31 4","32 6","33 0","34 5","35 8","36 4","37 0","38 6","39 4"]}
+[INFO ] 2024-01-06 15:38:00.066 [pool-1-thread-9] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:38:00.0592322"},"body":["20 2","21 3","22 0","23 5","24 4","25 1","26 2","27 2","28 -1","29 0","30 4","31 4","32 6","33 0","34 5","35 8","36 4","37 0","38 6","39 4"]}
+[INFO ] 2024-01-06 15:38:00.066 [pool-1-thread-9] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:38:00.067 [pool-1-thread-9] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:38:00.067 [pool-1-thread-9] ConsoleRequestHandler - Received ["20 2","21 3","22 0","23 5","24 4","25 1","26 2","27 2","28 -1","29 0","30 4","31 4","32 6","33 0","34 5","35 8","36 4","37 0","38 6","39 4"] participants
+[INFO ] 2024-01-06 15:38:01.076 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:01.077 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:01.077 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:01.078 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:38:02.090 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:02.090 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:02.091 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:03.092 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:03.093 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:03.094 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:04.104 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:04.105 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:04.106 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:05.112 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:05.112 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:05.113 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:06.123 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:06.124 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:06.125 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:07.135 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:07.136 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:07.136 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:08.138 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:08.139 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:08.140 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:09.146 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:09.146 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:09.147 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:10.156 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:10.157 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:10.157 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:11.169 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:11.170 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:11.170 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:12.170 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:12.171 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:12.172 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:13.179 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:13.180 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:13.181 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:14.194 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:14.194 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:14.194 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:15.207 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:15.208 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:15.208 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:16.217 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:16.217 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:16.218 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:17.220 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:17.221 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:17.222 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:18.222 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:18.223 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:18.223 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:19.229 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:19.229 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:19.230 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:20.239 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:20.240 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:20.240 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:21.243 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:21.244 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:21.244 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:22.252 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:22.252 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:22.252 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:23.265 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:23.266 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:23.266 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:24.282 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:24.282 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:24.283 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:25.284 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:25.284 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:25.286 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:26.290 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:26.291 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:26.292 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:27.301 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:27.302 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:27.302 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:28.315 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:28.315 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:28.316 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:29.316 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:29.317 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:29.317 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:30.328 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:30.328 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:30.328 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:31.333 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:31.333 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:31.333 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:32.348 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:32.348 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:32.348 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:38:33.350 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:38:33.351 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:38:33.351 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:30.189 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 15:39:30.194 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 15:39:31.847 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:31.847 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:31.848 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:31.852 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:39:31.858 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:39:31.8571237"}}
+[ERROR] 2024-01-06 15:39:31.858 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:39:32.229 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:39:32.234 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:31.8324888"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:39:32.234 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:31.8324888"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:39:32.235 [pool-1-thread-4] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:39:32.235 [pool-1-thread-4] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:39:32.235 [pool-1-thread-4] ConsoleRequestHandler - Received ["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"] participants
+[INFO ] 2024-01-06 15:39:32.236 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:39:33.249 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:33.250 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:33.250 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:33.251 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:39:33.252 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:39:33.25147"}}
+[ERROR] 2024-01-06 15:39:33.252 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:39:33.253 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:39:33.254 [pool-1-thread-5] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:33.2475392"},"body":["20 6","21 7","22 3","23 1","24 -1","25 6","26 7","27 6","28 0","29 5","30 -1","31 0","32 7","33 4","34 6","35 2","36 5","37 4","38 7","39 4"]}
+[INFO ] 2024-01-06 15:39:33.254 [pool-1-thread-5] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:33.2475392"},"body":["20 6","21 7","22 3","23 1","24 -1","25 6","26 7","27 6","28 0","29 5","30 -1","31 0","32 7","33 4","34 6","35 2","36 5","37 4","38 7","39 4"]}
+[INFO ] 2024-01-06 15:39:33.254 [pool-1-thread-5] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:39:33.255 [pool-1-thread-5] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:39:33.255 [pool-1-thread-5] ConsoleRequestHandler - Received ["20 6","21 7","22 3","23 1","24 -1","25 6","26 7","27 6","28 0","29 5","30 -1","31 0","32 7","33 4","34 6","35 2","36 5","37 4","38 7","39 4"] participants
+[INFO ] 2024-01-06 15:39:33.255 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:39:34.266 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:34.266 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:34.267 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:34.268 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:39:34.268 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:39:34.2685625"}}
+[ERROR] 2024-01-06 15:39:34.269 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:39:34.270 [pool-1-thread-6] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:39:34.271 [pool-1-thread-6] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:34.2646454"},"body":["40 7","41 2","42 6","43 5","44 6","45 8","46 3","47 1","48 0","49 2","50 1","51 -1","52 1","53 4","54 0","55 3","56 5","57 7","58 7","59 0"]}
+[INFO ] 2024-01-06 15:39:34.271 [pool-1-thread-6] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:34.2646454"},"body":["40 7","41 2","42 6","43 5","44 6","45 8","46 3","47 1","48 0","49 2","50 1","51 -1","52 1","53 4","54 0","55 3","56 5","57 7","58 7","59 0"]}
+[INFO ] 2024-01-06 15:39:34.272 [pool-1-thread-6] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:39:34.272 [pool-1-thread-6] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:39:34.272 [pool-1-thread-6] ConsoleRequestHandler - Received ["40 7","41 2","42 6","43 5","44 6","45 8","46 3","47 1","48 0","49 2","50 1","51 -1","52 1","53 4","54 0","55 3","56 5","57 7","58 7","59 0"] participants
+[INFO ] 2024-01-06 15:39:34.272 [pool-1-thread-6] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:39:35.281 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:35.282 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:35.282 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:35.283 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:39:35.284 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:39:35.2833009"}}
+[ERROR] 2024-01-06 15:39:35.284 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:39:35.285 [pool-1-thread-7] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:39:35.286 [pool-1-thread-7] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:35.2793818"},"body":["60 2","61 2","62 5","63 2","64 4","65 0","66 4","67 3","68 7","69 1","70 0","71 -1","72 4","73 8","74 -1","75 2","76 3","77 -1","78 7","79 8"]}
+[INFO ] 2024-01-06 15:39:35.286 [pool-1-thread-7] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:35.2793818"},"body":["60 2","61 2","62 5","63 2","64 4","65 0","66 4","67 3","68 7","69 1","70 0","71 -1","72 4","73 8","74 -1","75 2","76 3","77 -1","78 7","79 8"]}
+[INFO ] 2024-01-06 15:39:35.287 [pool-1-thread-7] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:39:35.287 [pool-1-thread-7] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:39:35.287 [pool-1-thread-7] ConsoleRequestHandler - Received ["60 2","61 2","62 5","63 2","64 4","65 0","66 4","67 3","68 7","69 1","70 0","71 -1","72 4","73 8","74 -1","75 2","76 3","77 -1","78 7","79 8"] participants
+[INFO ] 2024-01-06 15:39:35.287 [pool-1-thread-7] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:39:36.282 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:36.283 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:36.284 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:36.284 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:39:36.285 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:39:36.2859608"}}
+[ERROR] 2024-01-06 15:39:36.285 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:39:36.286 [pool-1-thread-8] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:39:36.287 [pool-1-thread-8] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:36.2819673"},"body":["0 3","1 7","2 0","3 8","4 7","5 8","6 8","7 3","8 5","9 5","10 1","11 8","12 -1","13 1","14 1","15 3","16 -1","17 3","18 3","19 4"]}
+[INFO ] 2024-01-06 15:39:36.287 [pool-1-thread-8] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:36.2819673"},"body":["0 3","1 7","2 0","3 8","4 7","5 8","6 8","7 3","8 5","9 5","10 1","11 8","12 -1","13 1","14 1","15 3","16 -1","17 3","18 3","19 4"]}
+[INFO ] 2024-01-06 15:39:36.288 [pool-1-thread-8] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:39:36.288 [pool-1-thread-8] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:39:36.288 [pool-1-thread-8] ConsoleRequestHandler - Received ["0 3","1 7","2 0","3 8","4 7","5 8","6 8","7 3","8 5","9 5","10 1","11 8","12 -1","13 1","14 1","15 3","16 -1","17 3","18 3","19 4"] participants
+[INFO ] 2024-01-06 15:39:36.289 [pool-1-thread-8] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:39:37.289 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:37.290 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:37.291 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:37.292 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:39:37.292 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:39:37.2923799"}}
+[ERROR] 2024-01-06 15:39:37.293 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:39:37.294 [pool-1-thread-9] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:39:37.295 [pool-1-thread-9] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:37.2883747"},"body":["20 2","21 3","22 0","23 5","24 4","25 1","26 2","27 2","28 -1","29 0","30 4","31 4","32 6","33 0","34 5","35 8","36 4","37 0","38 6","39 4"]}
+[INFO ] 2024-01-06 15:39:37.295 [pool-1-thread-9] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:39:37.2883747"},"body":["20 2","21 3","22 0","23 5","24 4","25 1","26 2","27 2","28 -1","29 0","30 4","31 4","32 6","33 0","34 5","35 8","36 4","37 0","38 6","39 4"]}
+[INFO ] 2024-01-06 15:39:37.296 [pool-1-thread-9] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:39:37.296 [pool-1-thread-9] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:39:37.296 [pool-1-thread-9] ConsoleRequestHandler - Received ["20 2","21 3","22 0","23 5","24 4","25 1","26 2","27 2","28 -1","29 0","30 4","31 4","32 6","33 0","34 5","35 8","36 4","37 0","38 6","39 4"] participants
+[INFO ] 2024-01-06 15:39:38.303 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:38.303 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:38.304 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:38.305 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:39:39.311 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:39.312 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:39.312 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:40.314 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:40.315 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:40.316 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:41.319 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:41.319 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:41.319 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:42.331 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:42.332 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:42.332 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:43.336 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:43.337 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:43.337 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:44.348 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:44.348 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:44.349 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:45.360 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:45.361 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:45.361 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:46.374 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:46.375 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:46.375 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:47.392 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:39:47.392 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:39:47.392 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:39:48.056 [pool-1-thread-8] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:39:48.056 [pool-1-thread-7] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:39:48.056 [pool-1-thread-5] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:39:48.056 [pool-1-thread-6] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:39:48.056 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:39:48.373 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 5 connections
+[INFO ] 2024-01-06 15:41:48.197 [pool-1-thread-1] Listener - start listening
+[INFO ] 2024-01-06 15:41:48.201 [main] ConnectionHandler - Listening on port 8000
+[INFO ] 2024-01-06 15:41:54.423 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:54.423 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:54.424 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:54.427 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:54.433 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:54.4329605"}}
+[ERROR] 2024-01-06 15:41:54.433 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:54.762 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:54.765 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:54.4093716"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:41:54.765 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:54.4093716"},"body":["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"]}
+[INFO ] 2024-01-06 15:41:54.766 [pool-1-thread-4] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:54.766 [pool-1-thread-4] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:54.766 [pool-1-thread-4] ConsoleRequestHandler - Received ["0 7","1 5","2 8","3 2","4 -1","5 1","6 6","7 8","8 1","9 1","10 1","11 0","12 0","13 4","14 -1","15 4","16 0","17 1","18 2","19 1"] participants
+[INFO ] 2024-01-06 15:41:54.767 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:54.870 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:54.870 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:54.870 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:54.871 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:54.871 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:54.871335"}}
+[ERROR] 2024-01-06 15:41:54.871 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:54.872 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:54.872 [pool-1-thread-5] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:54.8693531"},"body":["20 6","21 7","22 3","23 1","24 -1","25 6","26 7","27 6","28 0","29 5","30 -1","31 0","32 7","33 4","34 6","35 2","36 5","37 4","38 7","39 4"]}
+[INFO ] 2024-01-06 15:41:54.872 [pool-1-thread-5] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:54.8693531"},"body":["20 6","21 7","22 3","23 1","24 -1","25 6","26 7","27 6","28 0","29 5","30 -1","31 0","32 7","33 4","34 6","35 2","36 5","37 4","38 7","39 4"]}
+[INFO ] 2024-01-06 15:41:54.872 [pool-1-thread-5] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:54.873 [pool-1-thread-5] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:54.873 [pool-1-thread-5] ConsoleRequestHandler - Received ["20 6","21 7","22 3","23 1","24 -1","25 6","26 7","27 6","28 0","29 5","30 -1","31 0","32 7","33 4","34 6","35 2","36 5","37 4","38 7","39 4"] participants
+[INFO ] 2024-01-06 15:41:54.874 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:54.982 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:54.983 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:54.983 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:54.983 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:54.984 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:54.9838511"}}
+[ERROR] 2024-01-06 15:41:54.984 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:54.985 [pool-1-thread-6] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:54.985 [pool-1-thread-6] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:54.9812916"},"body":["40 7","41 2","42 6","43 5","44 6","45 8","46 3","47 1","48 0","49 2","50 1","51 -1","52 1","53 4","54 0","55 3","56 5","57 7","58 7","59 0"]}
+[INFO ] 2024-01-06 15:41:54.985 [pool-1-thread-6] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:54.9812916"},"body":["40 7","41 2","42 6","43 5","44 6","45 8","46 3","47 1","48 0","49 2","50 1","51 -1","52 1","53 4","54 0","55 3","56 5","57 7","58 7","59 0"]}
+[INFO ] 2024-01-06 15:41:54.985 [pool-1-thread-6] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:54.986 [pool-1-thread-6] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:54.986 [pool-1-thread-6] ConsoleRequestHandler - Received ["40 7","41 2","42 6","43 5","44 6","45 8","46 3","47 1","48 0","49 2","50 1","51 -1","52 1","53 4","54 0","55 3","56 5","57 7","58 7","59 0"] participants
+[INFO ] 2024-01-06 15:41:54.986 [pool-1-thread-6] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.091 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.091 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.091 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.092 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:55.092 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:55.0920158"}}
+[ERROR] 2024-01-06 15:41:55.092 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:55.092 [pool-1-thread-7] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.093 [pool-1-thread-7] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:55.0900984"},"body":["60 2","61 2","62 5","63 2","64 4","65 0","66 4","67 3","68 7","69 1","70 0","71 -1","72 4","73 8","74 -1","75 2","76 3","77 -1","78 7","79 8"]}
+[INFO ] 2024-01-06 15:41:55.094 [pool-1-thread-7] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:55.0900984"},"body":["60 2","61 2","62 5","63 2","64 4","65 0","66 4","67 3","68 7","69 1","70 0","71 -1","72 4","73 8","74 -1","75 2","76 3","77 -1","78 7","79 8"]}
+[INFO ] 2024-01-06 15:41:55.094 [pool-1-thread-7] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:55.094 [pool-1-thread-7] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:55.094 [pool-1-thread-7] ConsoleRequestHandler - Received ["60 2","61 2","62 5","63 2","64 4","65 0","66 4","67 3","68 7","69 1","70 0","71 -1","72 4","73 8","74 -1","75 2","76 3","77 -1","78 7","79 8"] participants
+[INFO ] 2024-01-06 15:41:55.094 [pool-1-thread-7] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.199 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.200 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.201 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.201 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:55.201 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:55.201621"}}
+[ERROR] 2024-01-06 15:41:55.201 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:55.203 [pool-1-thread-8] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.204 [pool-1-thread-8] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:55.1991086"},"body":["0 3","1 7","2 0","3 8","4 7","5 8","6 8","7 3","8 5","9 5","10 1","11 8","12 -1","13 1","14 1","15 3","16 -1","17 3","18 3","19 4"]}
+[INFO ] 2024-01-06 15:41:55.204 [pool-1-thread-8] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:55.1991086"},"body":["0 3","1 7","2 0","3 8","4 7","5 8","6 8","7 3","8 5","9 5","10 1","11 8","12 -1","13 1","14 1","15 3","16 -1","17 3","18 3","19 4"]}
+[INFO ] 2024-01-06 15:41:55.205 [pool-1-thread-8] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:55.205 [pool-1-thread-8] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:55.205 [pool-1-thread-8] ConsoleRequestHandler - Received ["0 3","1 7","2 0","3 8","4 7","5 8","6 8","7 3","8 5","9 5","10 1","11 8","12 -1","13 1","14 1","15 3","16 -1","17 3","18 3","19 4"] participants
+[INFO ] 2024-01-06 15:41:55.205 [pool-1-thread-8] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.308 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.308 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.308 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.309 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:55.309 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:55.3092733"}}
+[ERROR] 2024-01-06 15:41:55.309 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:55.310 [pool-1-thread-9] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.310 [pool-1-thread-9] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:55.3073992"},"body":["20 2","21 3","22 0","23 5","24 4","25 1","26 2","27 2","28 -1","29 0","30 4","31 4","32 6","33 0","34 5","35 8","36 4","37 0","38 6","39 4"]}
+[INFO ] 2024-01-06 15:41:55.311 [pool-1-thread-9] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:55.3073992"},"body":["20 2","21 3","22 0","23 5","24 4","25 1","26 2","27 2","28 -1","29 0","30 4","31 4","32 6","33 0","34 5","35 8","36 4","37 0","38 6","39 4"]}
+[INFO ] 2024-01-06 15:41:55.311 [pool-1-thread-9] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:55.311 [pool-1-thread-9] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:55.311 [pool-1-thread-9] ConsoleRequestHandler - Received ["20 2","21 3","22 0","23 5","24 4","25 1","26 2","27 2","28 -1","29 0","30 4","31 4","32 6","33 0","34 5","35 8","36 4","37 0","38 6","39 4"] participants
+[INFO ] 2024-01-06 15:41:55.311 [pool-1-thread-9] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.416 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.417 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.417 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.417 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:55.418 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:55.4174442"}}
+[ERROR] 2024-01-06 15:41:55.418 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:55.419 [pool-1-thread-10] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.419 [pool-1-thread-10] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:55.4154381"},"body":["40 5","41 1","42 8","43 6","44 4","45 0","46 7","47 0","48 4","49 6","50 6","51 3","52 -1","53 -1","54 -1","55 3","56 3","57 6","58 7","59 0"]}
+[INFO ] 2024-01-06 15:41:55.419 [pool-1-thread-10] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:55.4154381"},"body":["40 5","41 1","42 8","43 6","44 4","45 0","46 7","47 0","48 4","49 6","50 6","51 3","52 -1","53 -1","54 -1","55 3","56 3","57 6","58 7","59 0"]}
+[INFO ] 2024-01-06 15:41:55.420 [pool-1-thread-10] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:55.420 [pool-1-thread-10] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:55.420 [pool-1-thread-10] ConsoleRequestHandler - Received ["40 5","41 1","42 8","43 6","44 4","45 0","46 7","47 0","48 4","49 6","50 6","51 3","52 -1","53 -1","54 -1","55 3","56 3","57 6","58 7","59 0"] participants
+[INFO ] 2024-01-06 15:41:55.420 [pool-1-thread-10] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.524 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.525 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.525 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.525 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:55.525 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:55.5259916"}}
+[ERROR] 2024-01-06 15:41:55.526 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:55.626 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.626 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.626 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.626 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:55.627 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:55.6272134"}}
+[ERROR] 2024-01-06 15:41:55.627 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:55.730 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.730 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.730 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.730 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:55.731 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:55.7314816"}}
+[ERROR] 2024-01-06 15:41:55.731 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:55.831 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.832 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.832 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.833 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:55.833 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:55.833746"}}
+[ERROR] 2024-01-06 15:41:55.833 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:55.935 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:55.935 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.935 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:55.936 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:55.936 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:55.9361225"}}
+[ERROR] 2024-01-06 15:41:55.936 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:56.044 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:56.044 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.045 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.045 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:56.046 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:56.0460733"}}
+[ERROR] 2024-01-06 15:41:56.046 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:56.144 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:56.145 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.145 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.146 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:56.146 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:56.1462127"}}
+[ERROR] 2024-01-06 15:41:56.146 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:56.260 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:56.260 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.260 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.261 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:56.261 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:56.2612022"}}
+[ERROR] 2024-01-06 15:41:56.261 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:56.369 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:56.369 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.369 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.370 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:56.370 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:56.3707144"}}
+[ERROR] 2024-01-06 15:41:56.370 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:56.479 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:56.480 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.480 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.480 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:56.480 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:56.4808203"}}
+[ERROR] 2024-01-06 15:41:56.481 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:56.580 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:56.580 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.580 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.580 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:56.581 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:56.5819787"}}
+[ERROR] 2024-01-06 15:41:56.581 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:56.684 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:56.685 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.686 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.686 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:56.686 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:56.6864979"}}
+[ERROR] 2024-01-06 15:41:56.686 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:56.794 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:56.794 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.794 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.795 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:56.795 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:56.7951923"}}
+[ERROR] 2024-01-06 15:41:56.795 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:56.905 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:56.906 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.906 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:56.906 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:56.907 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:56.9064889"}}
+[ERROR] 2024-01-06 15:41:56.907 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:57.014 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:57.014 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.014 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.015 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:57.015 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:57.0154824"}}
+[ERROR] 2024-01-06 15:41:57.015 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:57.124 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:57.124 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.124 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.125 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:57.125 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:57.1253889"}}
+[ERROR] 2024-01-06 15:41:57.125 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:57.233 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:57.233 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.234 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.234 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:57.234 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:57.234036"}}
+[ERROR] 2024-01-06 15:41:57.234 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:57.341 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:57.343 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.343 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.343 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:57.344 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:57.3432837"}}
+[ERROR] 2024-01-06 15:41:57.344 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:57.452 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:57.452 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.452 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.453 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:57.453 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:57.4531977"}}
+[ERROR] 2024-01-06 15:41:57.453 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:57.559 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:57.559 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.560 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.560 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:57.560 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:57.5608392"}}
+[ERROR] 2024-01-06 15:41:57.560 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:57.668 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:57.668 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.668 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.668 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:57.669 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:57.6682406"}}
+[ERROR] 2024-01-06 15:41:57.669 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:57.777 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:57.777 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.777 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.778 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:57.778 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:57.778657"}}
+[ERROR] 2024-01-06 15:41:57.778 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:57.887 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:57.887 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.887 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.888 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:57.888 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:57.8882462"}}
+[ERROR] 2024-01-06 15:41:57.888 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:57.995 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:57.995 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.996 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:57.996 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:57.996 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:57.9962274"}}
+[ERROR] 2024-01-06 15:41:57.996 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:58.104 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:58.104 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.104 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.105 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:58.105 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:58.1056037"}}
+[ERROR] 2024-01-06 15:41:58.105 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:58.214 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:58.215 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.215 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.215 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:58.216 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:58.2160548"}}
+[ERROR] 2024-01-06 15:41:58.216 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:58.323 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:58.323 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.323 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.323 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:58.324 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:58.3244956"}}
+[ERROR] 2024-01-06 15:41:58.324 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:58.433 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:58.434 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.434 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.434 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:58.434 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:58.4347575"}}
+[ERROR] 2024-01-06 15:41:58.434 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:58.541 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:58.541 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.541 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.542 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:58.542 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:58.542394"}}
+[ERROR] 2024-01-06 15:41:58.542 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:58.650 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:58.650 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.650 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.651 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:58.651 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:58.6513135"}}
+[ERROR] 2024-01-06 15:41:58.651 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:58.760 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:58.760 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.760 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.761 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:58.761 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:58.7613276"}}
+[ERROR] 2024-01-06 15:41:58.761 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:58.870 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:58.870 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.870 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.870 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:58.871 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:58.8702092"}}
+[ERROR] 2024-01-06 15:41:58.871 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:58.980 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:58.980 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.980 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:58.980 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:58.981 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:58.9803542"}}
+[ERROR] 2024-01-06 15:41:58.981 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:59.087 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.088 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:59.088 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:59.088 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:59.089 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:59.0889102"}}
+[ERROR] 2024-01-06 15:41:59.089 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:59.197 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.197 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:59.197 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:59.198 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:59.198 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:59.1985352"}}
+[ERROR] 2024-01-06 15:41:59.198 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:59.306 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.307 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:59.307 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:59.307 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:59.308 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:59.3084642"}}
+[ERROR] 2024-01-06 15:41:59.308 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:59.416 [pool-1-thread-1] Listener - new connection /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.416 [pool-1-thread-1] Connection - creating connection for 127.0.0.1
+[INFO ] 2024-01-06 15:41:59.417 [pool-1-thread-1] Connection - connection created for 127.0.0.1
+[INFO ] 2024-01-06 15:41:59.417 [pool-1-thread-2] ConnectionHandler - Connection /127.0.0.1 added
+[INFO ] 2024-01-06 15:41:59.417 [pool-1-thread-2] ConsoleRequestHandler - Handling request {"header":{"host":"127.0.0.1","type":"local_connect","timestamp":"2024-01-06T15:41:59.4171906"}}
+[ERROR] 2024-01-06 15:41:59.417 [pool-1-thread-2] ConsoleRequestHandler - Unknown request type local_connect
+[INFO ] 2024-01-06 15:41:59.422 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.423 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.4234755"}}
+[ERROR] 2024-01-06 15:41:59.423 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.423 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.423 [pool-1-thread-8] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.423 [pool-1-thread-6] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.423 [pool-1-thread-7] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.423 [pool-1-thread-10] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.423 [pool-1-thread-9] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.423 [pool-1-thread-5] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.423 [pool-1-thread-8] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.4239794"}}
+[ERROR] 2024-01-06 15:41:59.424 [pool-1-thread-8] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.424 [pool-1-thread-8] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.424 [pool-1-thread-5] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.4239794"}}
+[ERROR] 2024-01-06 15:41:59.424 [pool-1-thread-5] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.424 [pool-1-thread-5] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.424 [pool-1-thread-7] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.4239794"}}
+[ERROR] 2024-01-06 15:41:59.424 [pool-1-thread-7] ConsoleRequestHandler - Unknown request type local_disconnect
+[INFO ] 2024-01-06 15:41:59.424 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[ERROR] 2024-01-06 15:41:59.424 [pool-1-thread-7] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.424 [pool-1-thread-8] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.424 [pool-1-thread-9] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.4239794"}}
+[INFO ] 2024-01-06 15:41:59.424 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[ERROR] 2024-01-06 15:41:59.424 [pool-1-thread-9] ConsoleRequestHandler - Unknown request type local_disconnect
+[INFO ] 2024-01-06 15:41:59.424 [pool-1-thread-7] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.424 [pool-1-thread-5] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:58.6493913"},"body":["36 1","37 6","38 7","39 6","40 5","41 5","42 6","43 1","44 0","45 8","46 0","47 1","48 6","49 3","50 7","51 5","52 0","53 -1","54 -1","55 -1"]}
+[INFO ] 2024-01-06 15:41:59.424 [pool-1-thread-8] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:58.7593773"},"body":["56 3","57 0","58 -1","59 3","60 3","61 7","62 1","63 -1","64 3","65 -1","66 5","67 6","68 2","69 0","70 6","71 -1","72 8","73 6","74 7","75 8"]}
+[ERROR] 2024-01-06 15:41:59.425 [pool-1-thread-9] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.425 [pool-1-thread-5] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:58.6493913"},"body":["36 1","37 6","38 7","39 6","40 5","41 5","42 6","43 1","44 0","45 8","46 0","47 1","48 6","49 3","50 7","51 5","52 0","53 -1","54 -1","55 -1"]}
+[INFO ] 2024-01-06 15:41:59.425 [pool-1-thread-7] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:58.9794188"},"body":["14 5","15 6","16 7","17 0","18 4","19 2","20 1","21 8","22 5","23 5","24 6","25 8","26 5","27 7","28 -1","29 7","30 7","31 5","32 0","33 5"]}
+[INFO ] 2024-01-06 15:41:59.425 [pool-1-thread-4] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:58.8693115"},"body":["76 0","77 4","78 7","79 0","80 3","81 4","0 0","1 8","2 4","3 7","4 1","5 3","6 -1","7 -1","8 4","9 6","10 7","11 8","12 -1","13 4"]}
+[INFO ] 2024-01-06 15:41:59.425 [pool-1-thread-9] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.425 [pool-1-thread-5] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:59.425 [pool-1-thread-5] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:59.425 [pool-1-thread-9] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:59.087906"},"body":["34 3","35 7","36 7","37 3","38 6","39 7","40 4","41 3","42 -1","43 5","44 5","45 2","46 3","47 1","48 8","49 5","50 0","51 3","52 4","53 5"]}
+[INFO ] 2024-01-06 15:41:59.425 [pool-1-thread-5] ConsoleRequestHandler - Received ["36 1","37 6","38 7","39 6","40 5","41 5","42 6","43 1","44 0","45 8","46 0","47 1","48 6","49 3","50 7","51 5","52 0","53 -1","54 -1","55 -1"] participants
+[INFO ] 2024-01-06 15:41:59.425 [pool-1-thread-5] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.425 [pool-1-thread-10] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.4239794"}}
+[ERROR] 2024-01-06 15:41:59.426 [pool-1-thread-10] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.426 [pool-1-thread-10] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.426 [pool-1-thread-6] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.4239794"}}
+[INFO ] 2024-01-06 15:41:59.426 [pool-1-thread-10] Connection - waiting for: /127.0.0.1
+[ERROR] 2024-01-06 15:41:59.426 [pool-1-thread-6] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.426 [pool-1-thread-6] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.426 [pool-1-thread-9] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:59.087906"},"body":["34 3","35 7","36 7","37 3","38 6","39 7","40 4","41 3","42 -1","43 5","44 5","45 2","46 3","47 1","48 8","49 5","50 0","51 3","52 4","53 5"]}
+[INFO ] 2024-01-06 15:41:59.426 [pool-1-thread-10] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:59.196595"},"body":["54 1","55 5","56 3","57 2","58 0","59 -1","60 0","61 2","62 1","63 7","64 2","65 3","66 4","67 -1","68 8","69 5","70 5","71 -1","72 3","73 7"]}
+[INFO ] 2024-01-06 15:41:59.426 [pool-1-thread-6] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.426 [pool-1-thread-9] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:59.426 [pool-1-thread-9] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:59.426 [pool-1-thread-9] ConsoleRequestHandler - Received ["34 3","35 7","36 7","37 3","38 6","39 7","40 4","41 3","42 -1","43 5","44 5","45 2","46 3","47 1","48 8","49 5","50 0","51 3","52 4","53 5"] participants
+[INFO ] 2024-01-06 15:41:59.426 [pool-1-thread-6] Connection - getting From: /127.0.0.1 JsonObject: {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:59.3055588"},"body":["74 -1","75 5","76 6","77 -1","78 2","79 2","80 4","81 4","82 5","83 7","84 0","85 6","86 3","87 6","88 -1","89 6","90 2","91 0","92 6","93 7"]}
+[INFO ] 2024-01-06 15:41:59.427 [pool-1-thread-9] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.427 [pool-1-thread-6] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:59.3055588"},"body":["74 -1","75 5","76 6","77 -1","78 2","79 2","80 4","81 4","82 5","83 7","84 0","85 6","86 3","87 6","88 -1","89 6","90 2","91 0","92 6","93 7"]}
+[INFO ] 2024-01-06 15:41:59.427 [pool-1-thread-6] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:59.427 [pool-1-thread-6] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:59.427 [pool-1-thread-6] ConsoleRequestHandler - Received ["74 -1","75 5","76 6","77 -1","78 2","79 2","80 4","81 4","82 5","83 7","84 0","85 6","86 3","87 6","88 -1","89 6","90 2","91 0","92 6","93 7"] participants
+[INFO ] 2024-01-06 15:41:59.427 [pool-1-thread-6] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.427 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:58.8693115"},"body":["76 0","77 4","78 7","79 0","80 3","81 4","0 0","1 8","2 4","3 7","4 1","5 3","6 -1","7 -1","8 4","9 6","10 7","11 8","12 -1","13 4"]}
+[INFO ] 2024-01-06 15:41:59.427 [pool-1-thread-4] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:59.427 [pool-1-thread-4] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:59.427 [pool-1-thread-4] ConsoleRequestHandler - Received ["76 0","77 4","78 7","79 0","80 3","81 4","0 0","1 8","2 4","3 7","4 1","5 3","6 -1","7 -1","8 4","9 6","10 7","11 8","12 -1","13 4"] participants
+[INFO ] 2024-01-06 15:41:59.428 [pool-1-thread-4] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.428 [pool-1-thread-7] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:58.9794188"},"body":["14 5","15 6","16 7","17 0","18 4","19 2","20 1","21 8","22 5","23 5","24 6","25 8","26 5","27 7","28 -1","29 7","30 7","31 5","32 0","33 5"]}
+[INFO ] 2024-01-06 15:41:59.428 [pool-1-thread-7] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:59.428 [pool-1-thread-7] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:59.428 [pool-1-thread-7] ConsoleRequestHandler - Received ["14 5","15 6","16 7","17 0","18 4","19 2","20 1","21 8","22 5","23 5","24 6","25 8","26 5","27 7","28 -1","29 7","30 7","31 5","32 0","33 5"] participants
+[INFO ] 2024-01-06 15:41:59.428 [pool-1-thread-7] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.428 [pool-1-thread-8] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:58.7593773"},"body":["56 3","57 0","58 -1","59 3","60 3","61 7","62 1","63 -1","64 3","65 -1","66 5","67 6","68 2","69 0","70 6","71 -1","72 8","73 6","74 7","75 8"]}
+[INFO ] 2024-01-06 15:41:59.428 [pool-1-thread-8] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:59.430 [pool-1-thread-8] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:59.430 [pool-1-thread-8] ConsoleRequestHandler - Received ["56 3","57 0","58 -1","59 3","60 3","61 7","62 1","63 -1","64 3","65 -1","66 5","67 6","68 2","69 0","70 6","71 -1","72 8","73 6","74 7","75 8"] participants
+[INFO ] 2024-01-06 15:41:59.430 [pool-1-thread-8] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.430 [pool-1-thread-10] ConsoleRequestHandler - Handling request {"header":{"Country":"C1","type":"sending-data","timestamp":"2024-01-06T15:41:59.196595"},"body":["54 1","55 5","56 3","57 2","58 0","59 -1","60 0","61 2","62 1","63 7","64 2","65 3","66 4","67 -1","68 8","69 5","70 5","71 -1","72 3","73 7"]}
+[INFO ] 2024-01-06 15:41:59.430 [pool-1-thread-10] ConsoleRequestHandler - Received data for country C1
+[INFO ] 2024-01-06 15:41:59.430 [pool-1-thread-10] ConsoleRequestHandler - Processing data for country C1
+[INFO ] 2024-01-06 15:41:59.430 [pool-1-thread-10] ConsoleRequestHandler - Received ["54 1","55 5","56 3","57 2","58 0","59 -1","60 0","61 2","62 1","63 7","64 2","65 3","66 4","67 -1","68 8","69 5","70 5","71 -1","72 3","73 7"] participants
+[INFO ] 2024-01-06 15:41:59.430 [pool-1-thread-10] Connection - waiting for: /127.0.0.1
+[INFO ] 2024-01-06 15:41:59.934 [pool-1-thread-9] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.934 [pool-1-thread-5] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.934 [pool-1-thread-8] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.934 [pool-1-thread-4] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.934 [pool-1-thread-7] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.934 [pool-1-thread-6] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.934 [pool-1-thread-10] Connection - connection /127.0.0.1 closed
+[INFO ] 2024-01-06 15:41:59.934 [pool-1-thread-9] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.9349767"}}
+[ERROR] 2024-01-06 15:41:59.935 [pool-1-thread-9] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.935 [pool-1-thread-9] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.935 [pool-1-thread-10] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.9349767"}}
+[ERROR] 2024-01-06 15:41:59.935 [pool-1-thread-10] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.935 [pool-1-thread-10] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.935 [pool-1-thread-6] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.9349767"}}
+[ERROR] 2024-01-06 15:41:59.935 [pool-1-thread-6] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.935 [pool-1-thread-6] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.935 [pool-1-thread-8] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.9349767"}}
+[ERROR] 2024-01-06 15:41:59.935 [pool-1-thread-8] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.936 [pool-1-thread-8] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.936 [pool-1-thread-7] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.9349767"}}
+[ERROR] 2024-01-06 15:41:59.936 [pool-1-thread-7] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.936 [pool-1-thread-7] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.936 [pool-1-thread-4] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.9349767"}}
+[ERROR] 2024-01-06 15:41:59.936 [pool-1-thread-4] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.936 [pool-1-thread-4] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:41:59.936 [pool-1-thread-5] ConsoleRequestHandler - Handling request {"header":{"host":"/127.0.0.1","type":"local_disconnect","timestamp":"2024-01-06T15:41:59.9349767"}}
+[ERROR] 2024-01-06 15:41:59.936 [pool-1-thread-5] ConsoleRequestHandler - Unknown request type local_disconnect
+[ERROR] 2024-01-06 15:41:59.936 [pool-1-thread-5] Connection - from: /127.0.0.1 error SocketException Connection reset
+[INFO ] 2024-01-06 15:42:00.317 [pool-1-thread-3] ConnectionHandler - Cleanup deleted 44 connections
