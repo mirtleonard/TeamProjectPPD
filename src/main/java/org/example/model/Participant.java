@@ -17,7 +17,7 @@ public class Participant {
         this.score = score;
     }
 
-    public int getId() {
+    public int getID() {
         return id;
     }
 

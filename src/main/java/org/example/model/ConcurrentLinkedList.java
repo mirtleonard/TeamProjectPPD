@@ -12,8 +12,8 @@ public class ConcurrentLinkedList {
     private int size;
 
     public ConcurrentLinkedList() {
-        this.head = new Node(null, null);
-        this.tail = new Node(null, null);
+        this.head = new Node(null);
+        this.tail = new Node(null);
         this.size = 0;
         head.setNext(tail);
     }
@@ -29,8 +29,8 @@ public class ConcurrentLinkedList {
 
 
 
-    public void insert(String key, Integer value) {
-        Node newNode = new Node(key, value);
+    public void insert(Participant participant) {
+        Node newNode = new Node(participant);
         Node current = head;
         current.lock();
         Node next = current.getNext();
@@ -42,14 +42,14 @@ public class ConcurrentLinkedList {
     }
 
 
-    public void delete(String key) {
+    public void delete(int id) {
         Node prev = head;
         prev.lock();
         Node current = prev.getNext();
         current.lock();
         try {
             while (current != tail) {
-                if (current.getKey().equals(key)) {
+                if (current.getParticipant().getID() == id) {
                     Node next = current.getNext();
                     next.lock();
                     prev.setNext(next);
@@ -73,14 +73,14 @@ public class ConcurrentLinkedList {
         }
     }
 
-   public Integer get(String key) {
+   public Integer get(int id) {
     Node current = head;
     current.lock();
     try {
         while (current != tail) {
-            String currentKey = current.getKey();
-            if (currentKey != null && currentKey.equals(key)) {
-                return current.getValue();
+            Participant participant = current.getParticipant();
+            if (participant != null && participant.getID() == id) {
+                return current.getParticipant().getScore();
             }
             Node next = current.getNext();
             next.lock();
@@ -120,15 +120,15 @@ public class ConcurrentLinkedList {
         return nodes;
     }
 
-    public void update(String key, Integer value) {
+    public void update(Integer id, Integer score) {
 
         Node current = head;
         current.lock();
         try {
             while (current != tail) {
-                String currentKey = current.getKey();
-                if (currentKey != null && currentKey.equals(key)) {
-                    current.setValue(current.getValue() + value);
+                Participant participant = current.getParticipant();
+                if (participant != null && participant.getID() == id) {
+                    participant.setScore(participant.getScore() + score);
                     return;
                 }
                 Node next = current.getNext();
@@ -145,10 +145,10 @@ public class ConcurrentLinkedList {
 
     public void sort() {
         List<Node> nodes = getAll();
+        System.out.println(nodes.size());
+        Collections.sort(nodes, Comparator.comparing(node -> node.getScore(), Comparator.nullsLast(Comparator.reverseOrder())));
 
-        Collections.sort(nodes, Comparator.comparing(Node::getValue, Comparator.nullsLast(Comparator.reverseOrder())));
-
-        Node newHead = new Node(null, null);
+        Node newHead = new Node(null);
         Node current = newHead;
 
         for (Node node : nodes) {

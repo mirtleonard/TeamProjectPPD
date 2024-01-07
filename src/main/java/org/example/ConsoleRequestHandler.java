@@ -22,14 +22,16 @@ public class ConsoleRequestHandler implements IRequestHandler {
 
     @Override
     public synchronized void handle(JSONObject request, Connection connection) {
-        logger.info("Handling request {}", request.toString());
+        //logger.info("Handling request {}", request.toString());
         JSONObject header = request.getJSONObject("header");
         String type = header.getString("type");
         if (type.contains("sending-data")) {
             Object body = request.get("body");
             String country = header.get("Country").toString();
-            logger.info("Received data for country {}", country);
             executorService.submit(new ProducerThread(processedData, country, body));
+        } else if (type.contains("get-ranking")) {
+            logger.info("Received request for ranking");
+            processedData.setFinished();
         } else {
             logger.error("Unknown request type {}", type);
         }

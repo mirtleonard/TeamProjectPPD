@@ -69,6 +69,13 @@ public class Client implements Runnable{
             if (buffer.size() > 0) {
                 sendData(buffer);
             }
+            JSONObject data = JSONBuilder.create()
+                    .addHeader("Country", "C" + id)
+                    .addHeader("type", "get-ranking")
+                    .build();
+            Socket socket = new Socket("localhost", 8000);
+            Connection connection = new Connection(socket);
+            connection.send(data);
         } catch (IOException e) {
             e.printStackTrace();
         }

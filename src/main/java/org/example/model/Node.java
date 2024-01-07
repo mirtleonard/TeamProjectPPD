@@ -3,15 +3,13 @@ package org.example.model;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Node {
-    private String key;
-    private Integer value;
+    private Participant participant;
     private Node next;
     private final ReentrantLock lock = new ReentrantLock();
 
 
-    public Node(String key, Integer value) {
-        this.key = key;
-        this.value = value;
+    public Node(Participant participant) {
+        this.participant = participant;
         this.next = null;
     }
 
@@ -22,25 +20,22 @@ public class Node {
     public void unlock() {
         lock.unlock();
     }
-    public String getKey() {
-        return key;
+
+    public int getScore() {
+        Participant participant = this.getParticipant();
+        if (participant == null) {
+            return -1;
+        }
+        return participant.getScore();
     }
 
-
-    public void setKey(String key) {
-        this.key = key;
+    public Participant getParticipant() {
+        return participant;
     }
 
-
-    public Integer getValue() {
-        return value;
+    public void setParticipant(Participant participant) {
+        this.participant = participant;
     }
-
-
-    public void setValue(Integer value) {
-        this.value = value;
-    }
-
 
     public Node getNext() {
         lock.lock();
