@@ -42,6 +42,7 @@ public class Client implements Runnable{
             Socket socket = new Socket("localhost", 8000);
             Connection connection = new Connection(socket);
             connection.send(data);
+            connection.terminate();
             buffer.clear();
         } catch (IOException e) {
             throw new RuntimeException(e);

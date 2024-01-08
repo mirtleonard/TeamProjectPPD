@@ -48,7 +48,7 @@ public class LinkedListHandler {
             Participant participant = processedData.get();
             while (participant != null) {
                 logger.info("Adding participant {} to linked list", participant.getID());
-                linkedList.insert(participant);
+                linkedList.addParticipant(participant);
                 participant = processedData.get();
             }
             consumerLatch.countDown();

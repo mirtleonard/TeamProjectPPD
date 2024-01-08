@@ -23,11 +23,11 @@ public class Connection implements Callable<Integer> {
     private IRequestHandler handler;
 
     public Connection(Socket socket) throws IOException {
-        logger.info("creating connection for {}", socket.getInetAddress().getHostAddress());
+        //logger.info("creating connection for {}", socket.getInetAddress().getHostAddress());
         this.socket = socket;
         outputStream = new ObjectOutputStream(this.socket.getOutputStream());
         outputStream.flush();
-        logger.info("connection created for {}", socket.getInetAddress().getHostAddress());
+        //logger.info("connection created for {}", socket.getInetAddress().getHostAddress());
     }
 
 
@@ -59,13 +59,17 @@ public class Connection implements Callable<Integer> {
         }
         terminated = true;
         try {
-            inputStream.close();
-            outputStream.close();
+            if (inputStream != null) {
+                inputStream.close();
+            }
+            if (outputStream != null) {
+                outputStream.close();
+            }
             socket.close();
         } catch (IOException e) {
             logger.error("while closing error {} {}", e.getClass().getSimpleName(), e.getMessage());
         }
-        logger.info("connection {} closed", socket.getInetAddress().toString());
+        //logger.info("connection {} closed", socket.getInetAddress().toString());
         try {
             this.handler.handle(JSONBuilder
                     .create()
@@ -74,16 +78,16 @@ public class Connection implements Callable<Integer> {
                     .addHeader("timestamp", LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME))
                     .build(), this);
         }catch (Exception e){
-            logger.error("{} {}", e.getClass().getSimpleName(), e.getMessage());
+            //logger.error("{} {}", e.getClass().getSimpleName(), e.getMessage());
         }
     }
 
     public void send(JSONObject jsonObject) throws IOException {
         synchronized (outputStream) {
-            logger.info("sending To: {} JsonObject: {}", socket.getInetAddress().toString(), jsonObject.toString());
+            //logger.info("sending To: {} JsonObject: {}", socket.getInetAddress().toString(), jsonObject.toString());
             outputStream.writeObject(jsonObject.toString());
             outputStream.flush();
-            logger.info("sent");
+            //logger.info("sent");
         }
     }
 
@@ -99,9 +103,9 @@ public class Connection implements Callable<Integer> {
 
         while (!terminated) {
             try {
-                logger.info("waiting for: {}", socket.getInetAddress().toString());
+                //logger.info("waiting for: {}", socket.getInetAddress().toString());
                 JSONObject tmp = new JSONObject((String) inputStream.readObject());
-                logger.info("getting From: {} JsonObject: {}", socket.getInetAddress().toString(), tmp);
+                //logger.info("getting From: {} JsonObject: {}", socket.getInetAddress().toString(), tmp);
                 handler.handle(tmp, this);
             } catch (IOException e) {
                 terminate();

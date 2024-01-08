@@ -8,16 +8,20 @@ import org.slf4j.LoggerFactory;
 
 import org.example.model.CustomQueue;
 
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 
 public class ConsoleRequestHandler implements IRequestHandler {
     private static final Logger logger = LoggerFactory.getLogger(ConsoleRequestHandler.class);
     private final ExecutorService executorService;
+    private final CountDownLatch producerLatch;
+
     CustomQueue processedData;
 
-    public ConsoleRequestHandler(ExecutorService clientDataExecutorService, CustomQueue processedData) {
+    public ConsoleRequestHandler(ExecutorService clientDataExecutorService, CustomQueue processedData, CountDownLatch producerLatch) {
         this.executorService = clientDataExecutorService;
         this.processedData = processedData;
+        this.producerLatch = producerLatch;
     }
 
     @Override
@@ -31,7 +35,13 @@ public class ConsoleRequestHandler implements IRequestHandler {
             executorService.submit(new ProducerThread(processedData, country, body));
         } else if (type.contains("get-ranking")) {
             logger.info("Received request for ranking");
-            processedData.setFinished();
+            producerLatch.countDown();
+            if (producerLatch.getCount() == 0) {
+                processedData.setFinished();
+            }
+        } else if (type.contains("local_disconnect")) {
+            //logger.info("Received disconnect request");
+            connection.terminate();
         } else {
             logger.error("Unknown request type {}", type);
         }

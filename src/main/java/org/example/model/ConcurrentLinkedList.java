@@ -1,15 +1,14 @@
 package org.example.model;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.ConcurrentSkipListSet;
 
 public class ConcurrentLinkedList {
 
     private Node head;
     private Node tail;
     private int size;
+    private Set<Integer> blackList = new ConcurrentSkipListSet<>();
 
     public ConcurrentLinkedList() {
         this.head = new Node(null);
@@ -118,6 +117,23 @@ public class ConcurrentLinkedList {
         }
 
         return nodes;
+    }
+
+    public void addParticipant(Participant participant) {
+        if (get(participant.getID()) != null) {
+            if (participant.getScore() == -1) {
+                delete(participant.getID());
+                blackList.add(participant.getID());
+            } else {
+                update(participant.getID(), participant.getScore());
+            }
+        } else {
+            if (participant.getScore() != -1 && !blackList.contains(participant.getID())) {
+                insert(participant);
+            } else if (participant.getScore() == -1) {
+                blackList.add(participant.getID());
+            }
+        }
     }
 
     public void update(Integer id, Integer score) {
