@@ -26,7 +26,7 @@ public class ConsoleRequestHandler implements IRequestHandler {
 
     @Override
     public synchronized void handle(JSONObject request, Connection connection) {
-        //logger.info("Handling request {}", request.toString());
+        logger.info("Handling request {}", request.toString());
         JSONObject header = request.getJSONObject("header");
         String type = header.getString("type");
         if (type.contains("sending-data")) {

@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.Socket;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,6 +42,7 @@ public class Client implements Runnable{
         try {
             Socket socket = new Socket("localhost", 8000);
             Connection connection = new Connection(socket);
+            System.out.println("Sending request " + data.toString());
             connection.send(data);
             connection.terminate();
             buffer.clear();
