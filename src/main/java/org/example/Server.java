@@ -16,8 +16,8 @@ public class Server {
 
     public static void main(String[] args) throws Exception {
         int clientHandlerThreads = 2;
-        int linkedListHandlerThreads = 1;
-        CountDownLatch producerLatch = new CountDownLatch(1); // the number of clients that will send data
+        int linkedListHandlerThreads = 2;
+        CountDownLatch producerLatch = new CountDownLatch(2); // the number of clients that will send data
         CountDownLatch consumerLatch = new CountDownLatch(linkedListHandlerThreads);
         // I don't think the above is necessary, but I'm not sure
         ExecutorService clientDataExecutorService = Executors.newFixedThreadPool(clientHandlerThreads);
