@@ -35,11 +35,11 @@ public class Server {
         consumerLatch.await();
         logger.info("Sorting linked list");
         linkedList.sort();
-
         writeToFile("data/clasament.txt", linkedList);
     }
 
     static void writeToFile(String file, ConcurrentLinkedList linkedList) {
+        logger.info("Writing to file");
         try {
             var fileWriter = new FileWriter(file);
             var writer = new BufferedWriter(fileWriter);

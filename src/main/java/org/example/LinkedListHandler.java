@@ -47,7 +47,6 @@ public class LinkedListHandler {
         public void run() {
             Participant participant = processedData.get();
             while (participant != null) {
-                logger.info("{}", participant);
                 linkedList.addParticipant(participant);
                 participant = processedData.get();
             }

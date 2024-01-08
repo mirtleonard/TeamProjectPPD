@@ -57,7 +57,7 @@ public class Client implements Runnable{
         // read from file
         ArrayList<String> buffer = new ArrayList<>();
         try {
-            for (int i = 1; i <= 10; ++i) {
+            for (int i = 1; i <= 1; ++i) {
                 String file = folder + "/rezultateC" + id + "_" + i + ".in";
                 FileReader fileReader = new FileReader(file);
                 BufferedReader reader = new BufferedReader(fileReader);
