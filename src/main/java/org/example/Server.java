@@ -10,7 +10,11 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import org.apache.commons.codec.binary.Base64;
+
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -96,12 +100,15 @@ public class Server {
 
     public static Future getFinalRankingResponseFutureTask(Connection connection) {
         return new FutureTask(() -> {
-            List<String> participantRanking = readFromFile("data/participants_ranking.txt");
-            List<String> countryRanking = readFromFile("data/country_ranking.txt");;
+            String participantRankingEncoded = encodeFileToBase64("data/participants_ranking.txt");
+            String countryRankingEncoded = encodeFileToBase64("data/country_ranking.txt");
+
             JSONObject body = new JSONObject()
-                    .put("participants", new JSONArray(participantRanking))
-                    .put("countries", new JSONArray(countryRanking));
+                    .put("participants", participantRankingEncoded)
+                    .put("countries", countryRankingEncoded);
+
             JSONObject response = JSONBuilder.create().addHeader("type", "final-ranking").setBody(body).build();
+
             try {
                 connection.send(response);
             } catch (IOException e) {
@@ -109,6 +116,11 @@ public class Server {
             }
             return null;
         });
+    }
+
+    private static String encodeFileToBase64(String filePath) throws IOException {
+        byte[] fileContent = Files.readAllBytes(Paths.get(filePath));
+        return Base64.encodeBase64String(fileContent);
     }
 
     public static Future getRankingResponseFutureTask(Connection connection) {

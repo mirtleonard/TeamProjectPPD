@@ -1,12 +1,11 @@
 package org.example;
 
+import org.apache.commons.codec.binary.Base64;
 import org.example.utils.JSONBuilder;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
@@ -52,47 +51,107 @@ public class Client implements Runnable{
 
     @Override
     public void run() {
-        // read from file
         ArrayList<String> buffer = new ArrayList<>();
         try {
             for (int i = 1; i <= 10; ++i) {
-                String file = folder + "/rezultateC" + id + "_" + i + ".in";
-                FileReader fileReader = new FileReader(file);
-                BufferedReader reader = new BufferedReader(fileReader);
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    buffer.add(line);
-                    if (buffer.size() == 20) {
-                        sendData(buffer);
-                    }
-                }
-                if (buffer.size() > 0) {
-                    sendData(buffer);
-                }
-                JSONObject data = JSONBuilder.create()
-                        .addHeader("Country", "C" + id)
-                        .addHeader("type", "get-ranking")
-                        .build();
-                Socket socket = new Socket("localhost", 8000);
-                Connection connection = new Connection(socket);
-                connection.send(data);
-                JSONObject receivedData = connection.read();
-                System.out.println(receivedData.toString());
-                connection.terminate();
+                readDataFromFile(buffer, i);
+                sendRankingRequest("get-ranking");
             }
-            JSONObject data = JSONBuilder.create()
-                    .addHeader("Country", "C" + id)
-                    .addHeader("type", "get-final-ranking")
-                    .build();
-            Socket socket = new Socket("localhost", 8000);
-            Connection connection = new Connection(socket);
-            connection.send(data);
-            JSONObject receivedData = connection.read();
-            System.out.println(receivedData.toString());
-            connection.terminate();
+            sendRankingRequest("get-final-ranking");
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private void readDataFromFile(ArrayList<String> buffer, int fileIndex) throws IOException {
+        String file = folder + "/rezultateC" + id + "_" + fileIndex + ".in";
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                buffer.add(line);
+                if (buffer.size() == 20) {
+                    sendData(buffer);
+                }
+            }
+            if (buffer.size() > 0) {
+                sendData(buffer);
+            }
+        }
+    }
+
+    private void sendRankingRequest(String requestType) throws IOException {
+        JSONObject data = JSONBuilder.create()
+                .addHeader("Country", "C" + id)
+                .addHeader("type",requestType)
+                .build();
+        Socket socket = new Socket("localhost", 8000);
+        Connection connection = new Connection(socket);
+        connection.send(data);
+        JSONObject receivedData = connection.read();
+        processReceivedData(receivedData);
 
     }
+
+    private void processReceivedData(JSONObject receivedData) {
+        JSONObject header = receivedData.optJSONObject("header");
+
+        if (header != null) {
+            String responseType = header.optString("type");
+
+            switch (responseType) {
+                case " ranking":
+                    System.out.println(receivedData.toString());
+                    break;
+                case "final-ranking":
+                    handleReceivedData(receivedData);
+                    break;
+                default:
+                    System.out.println("Unknown response " + responseType);
+                    break;
+            }
+        } else {
+            System.out.println("Invalid response");
+        }
+
+        System.out.println(receivedData.toString());
+    }
+
+    public void handleReceivedData(JSONObject receivedData) {
+        try {
+            JSONObject body = receivedData.optJSONObject("body");
+            if (body != null) {
+                if (body.has("participants")) {
+                    String participantsEncoded = body.getString("participants");
+                    byte[] participantsContent = Base64.decodeBase64(participantsEncoded);
+                    saveFile("participants_ranking.txt", participantsContent);
+                }
+                if (body.has("countries")) {
+                    String countriesEncoded = body.getString("countries");
+                    byte[] countriesContent = Base64.decodeBase64(countriesEncoded);
+                    saveFile("country_ranking.txt", countriesContent);
+                }
+            } else {
+                System.out.println("Invalid response");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    private void saveFile(String fileName, byte[] content) throws IOException {
+        File directory = new File("data/filesfromserver");
+        if (!directory.exists()) {
+            directory.mkdirs();
+        }
+        int lastDotIndex = fileName.lastIndexOf(".");
+        String baseName = fileName.substring(0, lastDotIndex);
+        String extension = fileName.substring(lastDotIndex);
+        String newFileName = baseName + id + extension;
+
+        File file = new File(directory, newFileName);
+        try (FileOutputStream fos = new FileOutputStream(file)) {
+            fos.write(content);
+        }
+    }
 }
+
+
