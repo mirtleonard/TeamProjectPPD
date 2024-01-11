@@ -16,7 +16,7 @@ public class Client implements Runnable{
     private int id;
     private String folder;
 
-    private long interval = 100;
+    private long interval;
     private long lastTimeSent = 0;
 
     public Client(int id, long interval) {
@@ -99,8 +99,8 @@ public class Client implements Runnable{
             String responseType = header.optString("type");
 
             switch (responseType) {
-                case " ranking":
-                    System.out.println(receivedData.toString());
+                case "ranking":
+                    System.out.println(Thread.currentThread() + ": " +  receivedData.toString());
                     break;
                 case "final-ranking":
                     handleReceivedData(receivedData);

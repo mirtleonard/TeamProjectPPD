@@ -61,7 +61,7 @@ public class Connection implements Runnable {
 
     public void send(JSONObject jsonObject) throws IOException {
         synchronized (outputStream) {
-            logger.info("sending To: {} JsonObject: {}", socket.getInetAddress().toString(), jsonObject.toString());
+            //logger.info("sending To: {} JsonObject: {}", socket.getInetAddress().toString(), jsonObject.toString());
             outputStream.writeObject(jsonObject.toString());
             outputStream.flush();
         }
@@ -80,7 +80,7 @@ public class Connection implements Runnable {
     public void run() {
         try {
             JSONObject tmp = new JSONObject((String) inputStream.readObject());
-            logger.info("getting From: {} JsonObject: {}", socket.getInetAddress().toString(), tmp);
+            //logger.info("getting From: {} JsonObject: {}", socket.getInetAddress().toString(), tmp);
             handler.handle(tmp, this);
         } catch (IOException e) {
             terminate();

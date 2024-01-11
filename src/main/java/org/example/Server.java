@@ -27,35 +27,40 @@ public class Server {
     private static AtomicLong lastCalculatedRanking = new AtomicLong(0);
     private static ConcurrentLinkedList linkedList = new ConcurrentLinkedList();
     private static HashMap<String, Integer> countryRanking = new HashMap<>();
-    private static long deltaT = 100;
+    private static long deltaT;
 
-    public static void main(String[] args) throws Exception {
-        int clientHandlerThreads = 2;
-        int linkedListHandlerThreads = 2;
-        CountDownLatch producerLatch = new CountDownLatch(5); // the number of clients that will send data
-        CountDownLatch consumerLatch = new CountDownLatch(linkedListHandlerThreads);
+    //args = [p_r, p_w, wt]
+    public static void main(String[] args) {
+        try {
+            int clientHandlerThreads = Integer.parseInt(args[0]);
+            int workerThreads = Integer.parseInt(args[1]);
+            deltaT = Integer.parseInt(args[2]);
+            CountDownLatch producerLatch = new CountDownLatch(5); // the number of clients that will send data
+            CountDownLatch consumerLatch = new CountDownLatch(workerThreads);
 
-        ExecutorService clientService = Executors.newFixedThreadPool(clientHandlerThreads);
-        CustomQueue<Participant> processedData = new CustomQueue<>(1000);
-        CustomQueue<FutureTask<Void>> responseTasks = new CustomQueue<>(100);
-        CustomQueue<FutureTask<Void>> finalResponseTasks = new CustomQueue<>(10);
-        RequestHandler requestHandler = new RequestHandler(linkedList, processedData, responseTasks, finalResponseTasks, producerLatch);
+            ExecutorService clientService = Executors.newFixedThreadPool(clientHandlerThreads);
+            CustomQueue<Participant> processedData = new CustomQueue<>(1000);
+            CustomQueue<FutureTask<Void>> responseTasks = new CustomQueue<>(100);
+            CustomQueue<FutureTask<Void>> finalResponseTasks = new CustomQueue<>(10);
+            RequestHandler requestHandler = new RequestHandler(linkedList, processedData, responseTasks, finalResponseTasks, producerLatch);
 
-        ConnectionHandler connectionHandler = new ConnectionHandler(requestHandler, clientService);
-        connectionHandler.listen(8000);
+            ConnectionHandler connectionHandler = new ConnectionHandler(requestHandler, clientService);
+            connectionHandler.listen(8000);
+            LinkedListHandler linkedListHandler = new LinkedListHandler(processedData, linkedList, workerThreads, consumerLatch);
 
-        LinkedListHandler linkedListHandler = new LinkedListHandler(processedData, linkedList, linkedListHandlerThreads, consumerLatch);
+            respondToRequests(responseTasks);
 
-        respondToRequests(responseTasks);
+            consumerLatch.await();
 
-        consumerLatch.await();
-
-        updateRanking();
-        logger.info("Sorting linked list");
-        linkedList.sort();
-        writeToFile("data/");
-        respondToRequests(finalResponseTasks);
-        connectionHandler.shutdown();
+            updateRanking();
+            logger.info("Sorting linked list");
+            linkedList.sort();
+            writeToFile("data/");
+            respondToRequests(finalResponseTasks);
+            connectionHandler.shutdown();
+        } catch (Exception e){
+            throw new RuntimeException(e);
+        }
     }
 
     private static void respondToRequests(CustomQueue<FutureTask<Void>> responseTasks) {

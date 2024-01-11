@@ -30,9 +30,11 @@ public class Listener implements Runnable {
     }
 
     public void terminate() {
+        if (terminated) {
+            return;
+        }
         logger.info("Listener terminating");
         terminated = true;
-
         try {
             socket.close();
         } catch (IOException e) {
@@ -53,7 +55,7 @@ public class Listener implements Runnable {
         while (!terminated) {
             try {
                 Socket s = socket.accept();
-                logger.info("new connection {}", s.getInetAddress().toString());
+                //logger.info("new connection {}", s.getInetAddress().toString());
                 try {
                     Connection client = new Connection(s);
                     client.setHandler(handler);
@@ -61,7 +63,7 @@ public class Listener implements Runnable {
                 } catch (Exception ignore) {
                 }
             } catch (Exception exception) {
-                logger.error("exception {} {}", exception.getClass().getSimpleName(), exception.getMessage());
+                //logger.error("exception {} {}", exception.getClass().getSimpleName(), exception.getMessage());
                 terminate();
             }
         }

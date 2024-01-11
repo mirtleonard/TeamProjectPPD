@@ -7,8 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class LinkedListHandler {
     private static final Logger logger = LoggerFactory.getLogger(ConnectionHandler.class);
@@ -28,12 +26,6 @@ public class LinkedListHandler {
         for (int i = 0; i < threadsNumber; i++) {
             workerThreads[i] = new Thread(new ConsumerThread(processedData, linkedList));
             workerThreads[i].start();
-        }
-    }
-
-    public void terminate() {
-        for (int i = 0; i < threadsNumber; i++) {
-            workerThreads[i].interrupt();
         }
     }
 

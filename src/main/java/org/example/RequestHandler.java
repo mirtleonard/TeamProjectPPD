@@ -31,7 +31,7 @@ public class RequestHandler implements IRequestHandler {
 
     @Override
     public synchronized void handle(JSONObject request, Connection connection) {
-        logger.info("Handling request {}", request.toString());
+        //logger.info("Handling request {}", request.toString());
         JSONObject header = request.getJSONObject("header");
         String type = header.getString("type");
         if (type.contains("sending-data")) {
@@ -58,7 +58,7 @@ public class RequestHandler implements IRequestHandler {
     }
 
     public void addDataInQueue(String country, Object data) {
-        logger.info("Processing data for country {}", country);
+        //logger.info("Processing data for country {}", country);
 
         JSONArray rawParticipants = (JSONArray) data;
 
