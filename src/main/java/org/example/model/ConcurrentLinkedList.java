@@ -176,7 +176,6 @@ public class ConcurrentLinkedList {
 
     public void sort() {
         List<Node> nodes = getAll();
-        System.out.println(nodes.size());
         Collections.sort(nodes, Comparator.comparing(Node::getParticipant, new ParticipantComparator()));
 
         Node newHead = new Node(null);
@@ -188,7 +187,6 @@ public class ConcurrentLinkedList {
         }
 
         current.setNext(tail);
-
         setHead(newHead);
     }
 

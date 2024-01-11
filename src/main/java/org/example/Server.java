@@ -26,7 +26,6 @@ public class Server {
     private static long deltaT = 100;
 
     public static void main(String[] args) throws Exception {
-        //listen();
         int clientHandlerThreads = 2;
         int linkedListHandlerThreads = 2;
         CountDownLatch producerLatch = new CountDownLatch(5); // the number of clients that will send data
@@ -34,8 +33,9 @@ public class Server {
 
         ExecutorService clientDataExecutorService = Executors.newFixedThreadPool(clientHandlerThreads);
         CustomQueue<Participant> processedData = new CustomQueue<>(1000);
-        CustomQueue<FutureTask<Void>> responseQueue = new CustomQueue<>(100);
-        ConsoleRequestHandler requestHandler = new ConsoleRequestHandler(linkedList, clientDataExecutorService, processedData, responseQueue, producerLatch);
+        CustomQueue<FutureTask<Void>> responseTasks = new CustomQueue<>(100);
+        CustomQueue<FutureTask<Void>> finalResponseTasks = new CustomQueue<>(10);
+        ConsoleRequestHandler requestHandler = new ConsoleRequestHandler(linkedList, clientDataExecutorService, processedData, responseTasks, finalResponseTasks, producerLatch);
 
         ExecutorService executorService = Executors.newFixedThreadPool(10);
         Map<String, Connection> connections = new ConcurrentHashMap<>();
@@ -45,27 +45,26 @@ public class Server {
         LinkedListHandler linkedListHandler = new LinkedListHandler(processedData, linkedList, linkedListHandlerThreads, consumerLatch);
         connectionHandler.listen(8000);
 
-        respondToClients(responseQueue);
+        respondToRequests(responseTasks);
 
         consumerLatch.await();
+        clientDataExecutorService.shutdown();
+        updateRanking();
         logger.info("Sorting linked list");
         linkedList.sort();
-        writeToFile("data/clasament.txt", linkedList);
+        writeToFile("data/");
+        respondToRequests(finalResponseTasks);
+        executorService.shutdown();
     }
 
-    private static void respondToClients(CustomQueue<FutureTask<Void>> responseQueue) {
-        Future<Void> future = responseQueue.get();
+    private static void respondToRequests(CustomQueue<FutureTask<Void>> responseTasks) {
+        FutureTask<Void> future = responseTasks.get();
         while (future != null) {
-            try {
-                future.get();
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            } catch (ExecutionException e) {
-                throw new RuntimeException(e);
-            }
-            future = responseQueue.get();
+            future.run();
+            future = responseTasks.get();
         }
     }
+
     private static void updateRanking() {
         logger.info("Updating ranking");
         HashMap<String, Integer> newRanking = new HashMap<>();
@@ -83,8 +82,40 @@ public class Server {
         lastCalculatedRanking.set(System.currentTimeMillis());
     }
 
-    public static CompletableFuture<Void> getResponseFutureTask(Connection connection) {
-        return CompletableFuture.runAsync(() -> {
+    private static List<String> readFromFile(String file) {
+        List<String> result = new ArrayList<>();
+        try {
+            FileReader fileReader = new FileReader(file);
+            BufferedReader reader = new BufferedReader(fileReader);
+            String line;
+            while ((line = reader.readLine()) != null) {
+                result.add(line);
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return result;
+    }
+
+    public static Future getFinalRankingResponseFutureTask(Connection connection) {
+        return new FutureTask(() -> {
+            List<String> participantRanking = readFromFile("data/participants_ranking.txt");
+            List<String> countryRanking = readFromFile("data/country_ranking.txt");;
+            JSONObject body = new JSONObject()
+                    .put("participants", new JSONArray(participantRanking))
+                    .put("countries", new JSONArray(countryRanking));
+            JSONObject response = JSONBuilder.create().addHeader("type", "final-ranking").setBody(body).build();
+            try {
+                connection.send(response);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            return null;
+        });
+    }
+
+    public static Future getRankingResponseFutureTask(Connection connection) {
+        return new FutureTask(() -> {
             if (System.currentTimeMillis() - lastCalculatedRanking.get() > deltaT) {
                 updateRanking();
             }
@@ -98,13 +129,15 @@ public class Server {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
+            return null;
         });
     }
 
-    static void writeToFile(String file, ConcurrentLinkedList linkedList) {
+    static void writeToFile(String directory) {
         logger.info("Writing to file");
+        File participantsFile = new File(directory + "participants_ranking.txt");
         try {
-            var fileWriter = new FileWriter(file);
+            var fileWriter = new FileWriter(participantsFile);
             var writer = new BufferedWriter(fileWriter);
             var list = linkedList.getAll();
             for (Node node : list) {
@@ -113,6 +146,23 @@ public class Server {
                     writer.newLine();
                 }
             }
+            writer.close();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+        File countryFile = new File(directory + "country_ranking.txt");
+        try {
+            var fileWriter = new FileWriter(countryFile);
+            var writer = new BufferedWriter(fileWriter);
+            contryRanking.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).forEach(entry -> {
+                try {
+                    writer.write(entry.getKey() + " " + entry.getValue());
+                    writer.newLine();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            });
             writer.close();
         } catch (Exception e) {
             throw new RuntimeException(e);

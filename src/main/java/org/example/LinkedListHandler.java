@@ -30,10 +30,6 @@ public class LinkedListHandler {
         }
     }
 
-    public void handle() {
-
-    }
-
     class ConsumerThread implements Runnable {
         private final CustomQueue<Participant> processedData;
         private ConcurrentLinkedList linkedList;

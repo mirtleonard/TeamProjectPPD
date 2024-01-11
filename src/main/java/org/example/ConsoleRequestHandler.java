@@ -9,26 +9,25 @@ import org.slf4j.LoggerFactory;
 
 import org.example.model.CustomQueue;
 
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.FutureTask;
+import java.util.concurrent.*;
 
 // this handler should be different for client and server
 public class ConsoleRequestHandler implements IRequestHandler {
     private static final Logger logger = LoggerFactory.getLogger(ConsoleRequestHandler.class);
     private final ExecutorService executorService;
     private final CountDownLatch producerLatch;
-    private final CustomQueue<CompletableFuture<Void>> responseQueue;
+    private final CustomQueue<Future> finalRankingResponseTasks;
+    private final CustomQueue<Future> responseTasks;
     private final CustomQueue<Participant> processedData;
     private final ConcurrentLinkedList linkedList;
 
-    public ConsoleRequestHandler(ConcurrentLinkedList linkedList, ExecutorService clientDataExecutorService, CustomQueue processedData, CustomQueue responseQueue, CountDownLatch producerLatch) {
+    public ConsoleRequestHandler(ConcurrentLinkedList linkedList, ExecutorService clientDataExecutorService, CustomQueue processedData, CustomQueue responseTasks, CustomQueue finalRankingResponseTasks, CountDownLatch producerLatch) {
         this.executorService = clientDataExecutorService;
         this.processedData = processedData;
         this.producerLatch = producerLatch;
         this.linkedList = linkedList;
-        this.responseQueue = responseQueue;
+        this.responseTasks = responseTasks;
+        this.finalRankingResponseTasks = finalRankingResponseTasks;
     }
 
     @Override
@@ -43,12 +42,14 @@ public class ConsoleRequestHandler implements IRequestHandler {
             connection.terminate();
         } else if (type.contains("get-ranking")) {
             logger.info("Received request for ranking");
-            responseQueue.add(Server.getResponseFutureTask(connection));
+            responseTasks.add(Server.getRankingResponseFutureTask(connection));
         } else if (type.contains("get-final-ranking")) {
+            finalRankingResponseTasks.add(Server.getFinalRankingResponseFutureTask(connection));
             producerLatch.countDown();
             if (producerLatch.getCount() == 0) {
                 processedData.setFinished();
-                responseQueue.setFinished();
+                responseTasks.setFinished();
+                finalRankingResponseTasks.setFinished();
             }
         } else if (type.contains("disconnect")) {
             connection.terminate();

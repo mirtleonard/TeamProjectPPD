@@ -76,8 +76,8 @@ public class Client implements Runnable{
                 Socket socket = new Socket("localhost", 8000);
                 Connection connection = new Connection(socket);
                 connection.send(data);
-                JSONObject readdata = connection.read();
-                System.out.println(readdata.toString());
+                JSONObject receivedData = connection.read();
+                System.out.println(receivedData.toString());
                 connection.terminate();
             }
             JSONObject data = JSONBuilder.create()
@@ -87,6 +87,9 @@ public class Client implements Runnable{
             Socket socket = new Socket("localhost", 8000);
             Connection connection = new Connection(socket);
             connection.send(data);
+            JSONObject receivedData = connection.read();
+            System.out.println(receivedData.toString());
+            connection.terminate();
         } catch (IOException e) {
             e.printStackTrace();
         }
