@@ -16,17 +16,24 @@ public class LinkedListHandler {
     private int threadsNumber;
     private CustomQueue processedData;
     private ConcurrentLinkedList linkedList;
-    private ExecutorService executorService;
 
-    public LinkedListHandler(CustomQueue processedData, ConcurrentLinkedList linkedList, int linkedListHandlerThreads, CountDownLatch consumerLatch) {
+    private Thread[] workerThreads;
+
+    public LinkedListHandler(CustomQueue processedData, ConcurrentLinkedList linkedList, int threadsNumber, CountDownLatch consumerLatch) {
         this.consumerLatch = consumerLatch;
         this.processedData = processedData;
         this.linkedList = linkedList;
-        this.executorService = Executors.newFixedThreadPool(linkedListHandlerThreads);
-        int threadsNumber = linkedListHandlerThreads;
+        this.workerThreads = new Thread[threadsNumber];
 
         for (int i = 0; i < threadsNumber; i++) {
-            executorService.submit(new ConsumerThread(processedData, linkedList));
+            workerThreads[i] = new Thread(new ConsumerThread(processedData, linkedList));
+            workerThreads[i].start();
+        }
+    }
+
+    public void terminate() {
+        for (int i = 0; i < threadsNumber; i++) {
+            workerThreads[i].interrupt();
         }
     }
 

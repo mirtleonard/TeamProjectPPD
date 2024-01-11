@@ -9,5 +9,6 @@ public class TestClients {
         for (int i = 1; i <= 5; i++) {
             executorService.submit(new Client(i, 100));
         }
+        executorService.shutdown();
     }
 }

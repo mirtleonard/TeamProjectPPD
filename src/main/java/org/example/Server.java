@@ -22,7 +22,7 @@ public class Server {
     private static final Logger logger = LoggerFactory.getLogger(ConnectionHandler.class);
     private static AtomicLong lastCalculatedRanking = new AtomicLong(0);
     private static ConcurrentLinkedList linkedList = new ConcurrentLinkedList();
-    private static HashMap<String, Integer> contryRanking = new HashMap<>();
+    private static HashMap<String, Integer> countryRanking = new HashMap<>();
     private static long deltaT = 100;
 
     public static void main(String[] args) throws Exception {
@@ -37,7 +37,6 @@ public class Server {
         CustomQueue<FutureTask<Void>> finalResponseTasks = new CustomQueue<>(10);
         RequestHandler requestHandler = new RequestHandler(linkedList, processedData, responseTasks, finalResponseTasks, producerLatch);
 
-        // connections + reading data from clients
         ConnectionHandler connectionHandler = new ConnectionHandler(requestHandler, clientService);
         connectionHandler.listen(8000);
 
@@ -46,11 +45,13 @@ public class Server {
         respondToRequests(responseTasks);
 
         consumerLatch.await();
+
         updateRanking();
         logger.info("Sorting linked list");
         linkedList.sort();
         writeToFile("data/");
         respondToRequests(finalResponseTasks);
+        connectionHandler.shutdown();
     }
 
     private static void respondToRequests(CustomQueue<FutureTask<Void>> responseTasks) {
@@ -74,7 +75,7 @@ public class Server {
                 }
             }
         }
-        contryRanking = newRanking;
+        countryRanking = newRanking;
         lastCalculatedRanking.set(System.currentTimeMillis());
     }
 
@@ -116,7 +117,7 @@ public class Server {
                 updateRanking();
             }
             List<String> result = new ArrayList<>();
-            contryRanking.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).forEach(entry -> {
+            countryRanking.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).forEach(entry -> {
                 result.add(entry.getKey() + " " + entry.getValue());
             });
             JSONObject response = JSONBuilder.create().addHeader("type", "ranking").setBody(new JSONArray(result)).build();
@@ -151,7 +152,7 @@ public class Server {
         try {
             var fileWriter = new FileWriter(countryFile);
             var writer = new BufferedWriter(fileWriter);
-            contryRanking.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).forEach(entry -> {
+            countryRanking.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).forEach(entry -> {
                 try {
                     writer.write(entry.getKey() + " " + entry.getValue());
                     writer.newLine();

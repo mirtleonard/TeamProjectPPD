@@ -81,11 +81,11 @@ public class Connection implements Runnable {
         try {
             JSONObject tmp = new JSONObject((String) inputStream.readObject());
             logger.info("getting From: {} JsonObject: {}", socket.getInetAddress().toString(), tmp);
-            handler.handle(tmp, this); // this handler should be different for client and server
+            handler.handle(tmp, this);
         } catch (IOException e) {
             terminate();
             logger.error("from: {} error {} {}", socket.getInetAddress().toString(), e.getClass().getSimpleName(), e.getMessage());
         } catch (Exception ignore) {
         }
+    }
 }
-                }
