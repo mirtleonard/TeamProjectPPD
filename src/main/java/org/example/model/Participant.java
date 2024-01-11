@@ -36,4 +36,13 @@ public class Participant {
     public String toString() {
         return this.id + " " + this.score + " " + this.country;
     }
+
+    public boolean equals(Object o) {
+        if (o == this) return true;
+        if (!(o instanceof Participant)) {
+            return false;
+        }
+        Participant participant = (Participant) o;
+        return id == participant.id && score == participant.score && country.equals(participant.country);
+    }
 }

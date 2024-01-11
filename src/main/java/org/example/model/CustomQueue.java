@@ -5,8 +5,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class CustomQueue {
-    LinkedList<Participant> queue = new LinkedList<>();
+public class CustomQueue<T> {
+    LinkedList<T> queue = new LinkedList<>();
     private final ReentrantLock LOCK = new ReentrantLock();
     private final Condition NOT_EMPTY = LOCK.newCondition();
     private final Condition NOT_FULL = LOCK.newCondition();
@@ -25,13 +25,13 @@ public class CustomQueue {
         LOCK.unlock();
     }
 
-    public void add(Participant participant) {
+    public void add(T entity) {
         LOCK.lock();
         try {
             while (queue.size() == maxCapacity) {
                 NOT_FULL.await();
             }
-            queue.add(participant);
+            queue.add(entity);
             NOT_EMPTY.signal(); //notify the consumers
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
@@ -40,20 +40,20 @@ public class CustomQueue {
         }
     }
 
-    public synchronized Participant get() {
-        Participant participant = null;
+    public synchronized T get() {
+        T entity = null;
         LOCK.lock();
         try {
             while (queue.size() == 0 && IS_RUNNING.get()) {
                 NOT_EMPTY.await();
             }
-            participant = queue.pollFirst();
+            entity = queue.pollFirst();
             NOT_FULL.signal(); //notify the producers
         } catch (InterruptedException exception) {
             throw new RuntimeException(exception);
         } finally {
             LOCK.unlock();
         }
-        return participant;
+        return entity;
     }
 }

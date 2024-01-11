@@ -27,6 +27,7 @@ public class Connection implements Callable<Integer> {
         this.socket = socket;
         outputStream = new ObjectOutputStream(this.socket.getOutputStream());
         outputStream.flush();
+        inputStream = new ObjectInputStream(this.socket.getInputStream());
         //logger.info("connection created for {}", socket.getInetAddress().getHostAddress());
     }
 
@@ -70,16 +71,6 @@ public class Connection implements Callable<Integer> {
             logger.error("while closing error {} {}", e.getClass().getSimpleName(), e.getMessage());
         }
         //logger.info("connection {} closed", socket.getInetAddress().toString());
-        try {
-            this.handler.handle(JSONBuilder
-                    .create()
-                    .addHeader("type", "local_disconnect")
-                    .addHeader("host", socket.getInetAddress().toString())
-                    .addHeader("timestamp", LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME))
-                    .build(), this);
-        }catch (Exception e){
-            //logger.error("{} {}", e.getClass().getSimpleName(), e.getMessage());
-        }
     }
 
     public void send(JSONObject jsonObject) throws IOException {
@@ -91,22 +82,23 @@ public class Connection implements Callable<Integer> {
         }
     }
 
+    public JSONObject read() {
+        try {
+            return new JSONObject((String) inputStream.readObject());
+        } catch (Exception e) {
+            logger.error("from: {} error {} {}", socket.getInetAddress().toString(), e.getClass().getSimpleName(), e.getMessage());
+            return null;
+        }
+    }
+
     @Override
     public Integer call() {
-        try {
-            inputStream = new ObjectInputStream(this.socket.getInputStream());
-        } catch (IOException e) {
-            terminate();
-            logger.error("from: {} error {} {}", socket.getInetAddress().toString(), e.getClass().getSimpleName(), e.getMessage());
-            return -1;
-        }
-
         while (!terminated) {
             try {
                 logger.info("waiting for: {}", socket.getInetAddress().toString());
                 JSONObject tmp = new JSONObject((String) inputStream.readObject());
                 logger.info("getting From: {} JsonObject: {}", socket.getInetAddress().toString(), tmp);
-                handler.handle(tmp, this);
+                handler.handle(tmp, this); // this handler should be different for client and server
             } catch (IOException e) {
                 terminate();
                 logger.error("from: {} error {} {}", socket.getInetAddress().toString(), e.getClass().getSimpleName(), e.getMessage());

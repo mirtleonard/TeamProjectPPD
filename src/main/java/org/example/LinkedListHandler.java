@@ -35,10 +35,10 @@ public class LinkedListHandler {
     }
 
     class ConsumerThread implements Runnable {
-        private final CustomQueue processedData;
+        private final CustomQueue<Participant> processedData;
         private ConcurrentLinkedList linkedList;
 
-        public ConsumerThread(CustomQueue processedData, ConcurrentLinkedList linkedList) {
+        public ConsumerThread(CustomQueue<Participant> processedData, ConcurrentLinkedList linkedList) {
             this.processedData = processedData;
             this.linkedList = linkedList;
         }

@@ -158,11 +158,26 @@ public class ConcurrentLinkedList {
             current.unlock();
         }
     }
+    class ParticipantComparator implements Comparator<Participant> {
+        @Override
+        public int compare(Participant o1, Participant o2) {
+            if (o1 == null) {
+                return 1;
+            }
+            if (o2 == null) {
+                return -1;
+            }
+            if (o1.getScore() == o2.getScore()) {
+                return o1.getID() - o2.getID();
+            }
+            return o2.getScore() - o1.getScore();
+        }
+    }
 
     public void sort() {
         List<Node> nodes = getAll();
         System.out.println(nodes.size());
-        Collections.sort(nodes, Comparator.comparing(node -> node.getScore(), Comparator.nullsLast(Comparator.reverseOrder())));
+        Collections.sort(nodes, Comparator.comparing(Node::getParticipant, new ParticipantComparator()));
 
         Node newHead = new Node(null);
         Node current = newHead;

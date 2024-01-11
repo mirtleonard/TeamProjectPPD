@@ -8,7 +8,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.Socket;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,7 +41,6 @@ public class Client implements Runnable{
         try {
             Socket socket = new Socket("localhost", 8000);
             Connection connection = new Connection(socket);
-            System.out.println("Sending request " + data.toString());
             connection.send(data);
             connection.terminate();
             buffer.clear();
@@ -57,7 +55,7 @@ public class Client implements Runnable{
         // read from file
         ArrayList<String> buffer = new ArrayList<>();
         try {
-            for (int i = 1; i <= 1; ++i) {
+            for (int i = 1; i <= 10; ++i) {
                 String file = folder + "/rezultateC" + id + "_" + i + ".in";
                 FileReader fileReader = new FileReader(file);
                 BufferedReader reader = new BufferedReader(fileReader);
@@ -68,13 +66,23 @@ public class Client implements Runnable{
                         sendData(buffer);
                     }
                 }
-            }
-            if (buffer.size() > 0) {
-                sendData(buffer);
+                if (buffer.size() > 0) {
+                    sendData(buffer);
+                }
+                JSONObject data = JSONBuilder.create()
+                        .addHeader("Country", "C" + id)
+                        .addHeader("type", "get-ranking")
+                        .build();
+                Socket socket = new Socket("localhost", 8000);
+                Connection connection = new Connection(socket);
+                connection.send(data);
+                JSONObject readdata = connection.read();
+                System.out.println(readdata.toString());
+                connection.terminate();
             }
             JSONObject data = JSONBuilder.create()
                     .addHeader("Country", "C" + id)
-                    .addHeader("type", "get-ranking")
+                    .addHeader("type", "get-final-ranking")
                     .build();
             Socket socket = new Socket("localhost", 8000);
             Connection connection = new Connection(socket);
