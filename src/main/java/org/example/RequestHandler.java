@@ -12,8 +12,8 @@ import org.example.model.CustomQueue;
 import java.util.concurrent.*;
 
 // this handler should be different for client and server
-public class ConsoleRequestHandler implements IRequestHandler {
-    private static final Logger logger = LoggerFactory.getLogger(ConsoleRequestHandler.class);
+public class RequestHandler implements IRequestHandler {
+    private static final Logger logger = LoggerFactory.getLogger(RequestHandler.class);
     private final CountDownLatch producerLatch;
     private final CustomQueue<Future> finalRankingResponseTasks;
     private final CustomQueue<Future> responseTasks;
@@ -21,7 +21,7 @@ public class ConsoleRequestHandler implements IRequestHandler {
     private final ConcurrentLinkedList linkedList;
 
 
-    public ConsoleRequestHandler(ConcurrentLinkedList linkedList, CustomQueue processedData, CustomQueue responseTasks, CustomQueue finalRankingResponseTasks, CountDownLatch producerLatch) {
+    public RequestHandler(ConcurrentLinkedList linkedList, CustomQueue processedData, CustomQueue responseTasks, CustomQueue finalRankingResponseTasks, CountDownLatch producerLatch) {
         this.processedData = processedData;
         this.producerLatch = producerLatch;
         this.linkedList = linkedList;

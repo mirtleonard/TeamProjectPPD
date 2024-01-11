@@ -31,30 +31,26 @@ public class Server {
         CountDownLatch producerLatch = new CountDownLatch(5); // the number of clients that will send data
         CountDownLatch consumerLatch = new CountDownLatch(linkedListHandlerThreads);
 
-        ExecutorService clientDataExecutorService = Executors.newFixedThreadPool(clientHandlerThreads);
+        ExecutorService clientService = Executors.newFixedThreadPool(clientHandlerThreads);
         CustomQueue<Participant> processedData = new CustomQueue<>(1000);
         CustomQueue<FutureTask<Void>> responseTasks = new CustomQueue<>(100);
         CustomQueue<FutureTask<Void>> finalResponseTasks = new CustomQueue<>(10);
-        ConsoleRequestHandler requestHandler = new ConsoleRequestHandler(linkedList, clientDataExecutorService, processedData, responseTasks, finalResponseTasks, producerLatch);
+        RequestHandler requestHandler = new RequestHandler(linkedList, processedData, responseTasks, finalResponseTasks, producerLatch);
 
-        ExecutorService executorService = Executors.newFixedThreadPool(10);
-        Map<String, Connection> connections = new ConcurrentHashMap<>();
-        BlockingQueue<Connection> pendingConnections = new LinkedBlockingQueue<>(1000);
-        ConnectionHandler connectionHandler = new ConnectionHandler(pendingConnections, connections, requestHandler, executorService);
+        // connections + reading data from clients
+        ConnectionHandler connectionHandler = new ConnectionHandler(requestHandler, clientService);
+        connectionHandler.listen(8000);
 
         LinkedListHandler linkedListHandler = new LinkedListHandler(processedData, linkedList, linkedListHandlerThreads, consumerLatch);
-        connectionHandler.listen(8000);
 
         respondToRequests(responseTasks);
 
         consumerLatch.await();
-        clientDataExecutorService.shutdown();
         updateRanking();
         logger.info("Sorting linked list");
         linkedList.sort();
         writeToFile("data/");
         respondToRequests(finalResponseTasks);
-        executorService.shutdown();
     }
 
     private static void respondToRequests(CustomQueue<FutureTask<Void>> responseTasks) {

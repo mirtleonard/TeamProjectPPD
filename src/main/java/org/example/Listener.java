@@ -6,24 +6,27 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
 
-public class Listener implements Callable<Integer> {
+public class Listener implements Runnable {
     private static final Logger logger = LoggerFactory.getLogger(Listener.class);
     private final int port;
+    private volatile boolean terminated;
+
+    private ExecutorService clientService;
+    private IRequestHandler handler;
+    private ServerSocket socket;
+
 
     public int getPort() {
         return port;
     }
 
-    private volatile boolean terminated;
-    private final BlockingQueue<Connection> newConnectionsQueue;
-    private ServerSocket socket;
 
-    public Listener(int port, BlockingQueue<Connection> newConnections) {
-        this.newConnectionsQueue = newConnections;
+    public Listener(int port, ExecutorService clientService, IRequestHandler handler) {
         this.port = port;
+        this.clientService = clientService;
+        this.handler = handler;
     }
 
     public void terminate() {
@@ -38,7 +41,7 @@ public class Listener implements Callable<Integer> {
     }
 
     @Override
-    public Integer call() {
+    public void run() {
         logger.info("start listening");
         try {
             socket = new ServerSocket(port);
@@ -52,16 +55,15 @@ public class Listener implements Callable<Integer> {
                 Socket s = socket.accept();
                 logger.info("new connection {}", s.getInetAddress().toString());
                 try {
-                    Connection connection = new Connection(s);
-                    newConnectionsQueue.put(connection);
+                    Connection client = new Connection(s);
+                    client.setHandler(handler);
+                    clientService.submit(client);
                 } catch (Exception ignore) {
                 }
             } catch (Exception exception) {
                 logger.error("exception {} {}", exception.getClass().getSimpleName(), exception.getMessage());
                 terminate();
-                return -1;
             }
         }
-        return 0;
     }
 }

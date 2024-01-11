@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.utils.JSONBuilder;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,11 +8,8 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.concurrent.Callable;
 
-public class Connection implements Callable<Integer> {
+public class Connection implements Runnable {
     Logger logger = LoggerFactory.getLogger(Connection.class);
     private volatile boolean terminated;
     private final Socket socket;
@@ -34,16 +30,6 @@ public class Connection implements Callable<Integer> {
 
     public void setHandler(IRequestHandler handler) {
         this.handler = handler;
-        try {
-            this.handler.handle(JSONBuilder
-                    .create()
-                    .addHeader("type", "local_connect")
-                    .addHeader("host", socket.getInetAddress().getHostAddress())
-                    .addHeader("timestamp", LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME))
-                    .build(), this);
-        } catch (Exception exception) {
-            logger.error("on ");
-        }
     }
 
     public Socket getSocket() {
@@ -78,7 +64,6 @@ public class Connection implements Callable<Integer> {
             logger.info("sending To: {} JsonObject: {}", socket.getInetAddress().toString(), jsonObject.toString());
             outputStream.writeObject(jsonObject.toString());
             outputStream.flush();
-            logger.info("sent");
         }
     }
 
@@ -92,20 +77,15 @@ public class Connection implements Callable<Integer> {
     }
 
     @Override
-    public Integer call() {
-        while (!terminated) {
-            try {
-                logger.info("waiting for: {}", socket.getInetAddress().toString());
-                JSONObject tmp = new JSONObject((String) inputStream.readObject());
-                logger.info("getting From: {} JsonObject: {}", socket.getInetAddress().toString(), tmp);
-                handler.handle(tmp, this); // this handler should be different for client and server
-            } catch (IOException e) {
-                terminate();
-                logger.error("from: {} error {} {}", socket.getInetAddress().toString(), e.getClass().getSimpleName(), e.getMessage());
-                return -1;
-            } catch (Exception ignore) {
-            }
+    public void run() {
+        try {
+            JSONObject tmp = new JSONObject((String) inputStream.readObject());
+            logger.info("getting From: {} JsonObject: {}", socket.getInetAddress().toString(), tmp);
+            handler.handle(tmp, this); // this handler should be different for client and server
+        } catch (IOException e) {
+            terminate();
+            logger.error("from: {} error {} {}", socket.getInetAddress().toString(), e.getClass().getSimpleName(), e.getMessage());
+        } catch (Exception ignore) {
         }
-        return 0;
-    }
 }
+                }
